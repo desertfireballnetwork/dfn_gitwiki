@@ -66,25 +66,3 @@ Todo: find a better name for this section
   (upload photos of your finished and in-progress installations here)
 
 # [Hayabusa]({% link campaigns/hayabusa/index.md %})
-
-# Wiki Info
-
-Users with accounts may edit the wiki, and anyone may view the wiki
-(even without logging in).
-
-Internal links do not work in edit mode (it's a bug), but work as
-expected in read mode.
-
-File uploads are restricted to certain types of files. If you require a
-new filetype to be added, please email DFN camera help.
-
-Click the DFN fireball in the upper left at any time to get back to this
-main page.
-
-[Help Editing Wiki Pages](https://www.mediawiki.org/wiki/Help:Editing_pages),
-[Formatting Help](https://www.mediawiki.org/wiki/Help:Formatting), [The
-MediaWiki
-VisualEditor](https://www.mediawiki.org/wiki/Help:VisualEditor/User_guide),
-Orphaned Pages, [DFN Wiki To-do
-List]({% link Wiki_To-do_List.md %})
-
