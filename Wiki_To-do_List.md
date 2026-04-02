@@ -5,12 +5,12 @@ nav_order: 13
 - Page on how to configure you camera and run a capture control test
   (use new name when writing about it, but the script to run is still
   called interval_control.sh) [Configuring the
-  Software](Configuring_the_Software.html)
+  Software]({% link observatories/maintenance/Configuring_the_Software.md %})
 - <s>Add and test VPN instructions for Linux, test VPN instructions for
   Windows</s>
 - <s>Check that DFN events email address has been created and
   delegated</s> mt
-- <s>create initial GUI page,</s> <s>[gui](Camera_GUI.html) fill
+- <s>create initial GUI page,</s> <s>gui fill
   with screen shots and basic help</s> done mt
 - Update global observatory status
 - Set up VM for offline access using [Kiwix](http://www.kiwix.org/) by
@@ -29,18 +29,17 @@ nav_order: 13
 - make screen captures
 - Setting up your own regional vpn
 - <s>setup dfnstation.cfg file [Configuring the
-  Software](Configuring_the_Software.html)</s> mt
-- check that [:![Good]({{ site.baseurl }}/images/Good) Quality
-  Image.jpg](:File:Good_Quality_Image.jpg.html) is the best image
+  Software]({% link observatories/maintenance/Configuring_the_Software.md %})</s> mt
+- check that ![Good Quality Image]({{ site.baseurl }}/images/Good_Quality_Image.jpg) is the best image
   possible
 
 ## Easy Things
 
 - <s>how to position your camera - light pollution map with examples of
   bad light polluted images</s>. - trent
-- how to apply [nanocoat to lenses](How_to_Apply_Nanocoating.html)
-  (with pictures or video) zacc [Camera
-  Installation](Camera_Installation.html)
+- how to apply [nanocoat to lenses]({% link observatories/maintenance/How_to_apply_Nanocoat.md %})
+  (with pictures or video) zacc Camera
+  Installation
 - <s>what type of camera do I have?</s> mc
 - <s>hosts file page (copy and paste sections) or append bash
   script</s> hard
@@ -53,12 +52,12 @@ nav_order: 13
 - sunshield howto bend
 - make a HDD swap gif for exts (might have to use astro camera for now)
 - <s>Page on local log in with a monitor and keyboard to be created </s>
-  [eks](Manual_Maintenance.html)
+  [eks]({% link observatories/maintenance/Manual_Maintenance.md %})
 - find nice dfn pictures
   - <s>outback stand install gallery (ask Robert how to do a gallery or
     look here: [Rooftop Fireball Camera
-    Installation](Rooftop_Fireball_Camera_Installation.html))</s>
-  - [gallery of fireballs](gallery_of_fireballs.html), planes,
+    Installation]({% link installations/Rooftop_Fireball_Camera_Installation.md %}))</s>
+  - gallery of fireballs, planes,
     satellites and other false positives
 - how to access fireball camera images using sftp (including key setup)
   rh
@@ -66,5 +65,5 @@ nav_order: 13
 - <s>Find an available, short and affordable domain for global
   observatory/DFN stuff</s>
 - link squad - morgs & patrick
-  [Special:AllPages](Special:AllPages.html)
-  [Special:OrphanedPages](Special:OrphanedPages.html)
+  Special:AllPages
+  Special:OrphanedPages

@@ -8,40 +8,40 @@ campaign.
 
 # Infrasound
 
-- [Raspberry Pi (bare) logger](RPi_infrasound_logger.html)
+- [Raspberry Pi (bare) logger]({% link campaigns/hayabusa/RPi_infrasound_logger.md %})
 
 <!-- -->
 
-- [Blackbox logger](Blackbox_infrasound_logger.html)
+- [Blackbox logger]({% link campaigns/hayabusa/Blackbox_infrasound_logger.md %})
 
 <!-- -->
 
-- [Raspberry Boom](RS&BOOM.html)
+- [Raspberry Boom]({% link campaigns/hayabusa/RS&BOOM.md %})
 
 # Seismic
 
-- [Raspberry Shake](RS&BOOM.html)
+- [Raspberry Shake]({% link campaigns/hayabusa/RS&BOOM.md %})
 
 # Optical
 
-- [DFNEXT temporary station](DFNEXT_temporary_station.html)
+- [DFNEXT temporary station]({% link observatories/dfnext/DFNEXT_temporary_station.md %})
 
 <!-- -->
 
-- [DFNEXT002 Marla](DFNEXT_PC_and_video_only.html)
+- [DFNEXT002 Marla]({% link observatories/dfnext/DFNEXT_PC_and_video_only.md %})
 
 <!-- -->
 
-- [Camera on tripod](camera_tripod.html)
+- [Camera on tripod]({% link campaigns/Camera_tripod.md %})
 
 # EM
 
-- [log-periodic antenna + UHF receiver](log-periodic_antenna.html)
+- [log-periodic antenna + UHF receiver]({% link campaigns/hayabusa/Log-periodic_antenna.md %})
 
 # Other
 
-- [Absolute barometer](Absolute_barometer.html)
+- [Absolute barometer]({% link campaigns/hayabusa/Absolute_barometer.md %})
 
 <!-- -->
 
-- [Energetic Particle Detector](EPD.html)
+- [Energetic Particle Detector]({% link campaigns/hayabusa/EPD.md %})

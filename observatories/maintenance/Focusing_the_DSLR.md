@@ -26,7 +26,7 @@ You will need:
 - A power source for the observatory and monitor.
 - Visible stars.
 - A method for [logging into your
-  camera](Getting_Started#Connecting_to_Your_Fireball_Observatory_for_the_First_Time.html).
+  camera]({% link Getting_Started.md %}#connecting-to-your-fireball-observatory-for-the-first-time).
 
 You should walk through these steps in a laboratory setting first when
 possible, however the best location for the focus will be the intended

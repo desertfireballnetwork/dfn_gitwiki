@@ -13,7 +13,7 @@ and is easier to build, repair and maintain. EXT systems required 12 V
 power and must be connected to the internet (via Ethernet, WiFi or
 mobile broadband).
 ![DFNEXT_camera_inside_1000.jpg]({{ site.baseurl }}/images/DFNEXT_camera_inside_1000.jpg)
-[DFNEXT](DFNEXT.html) and [DFNSMALL](DFNSMALL.html)
+[DFNEXT]({% link observatories/dfnext/index.md %}) and [DFNSMALL]({% link observatories/dfnsmall/index.md %})
 observatories have the same box size, mount bolts on the back, and power
 connector, which means they are fully interchangeable on the existing
 stand/mount.
@@ -24,7 +24,7 @@ stand/mount.
 
 This is the most common fireball observatory in the Australian DFN. The
 design has both video and still lenses and is easily recognised by the
-dual drive enclosure on the door. [DFNSMALL](DFNSMALL.html)
+dual drive enclosure on the door. [DFNSMALL]({% link observatories/dfnsmall/index.md %})
 systems require 12V power.
 
 This is the second generation of DFNSMALL with Commell LE-37D PC. The

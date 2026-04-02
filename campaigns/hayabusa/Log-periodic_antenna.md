@@ -25,7 +25,7 @@ Tools:
 # Receiver
 
 Instructions:
-[Media:UHF_receiver_operation_manual.pdf](Media:UHF_receiver_operation_manual.pdf.html)
+[Media:UHF_receiver_operation_manual.pdf]({{ site.baseurl }}/images/UHF_receiver_operation_manual.pdf)
 
 Time to set for the login start: 2020-12-05T17:26:00 (UTC)
 

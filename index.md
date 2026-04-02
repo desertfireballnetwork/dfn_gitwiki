@@ -3,7 +3,7 @@ title: "Home"
 nav_order: 1
 ---
 Welcome to the [Desert Fireball
-Network's](wikipedia:Desert_Fireball_Network.html) and Global
+Network's](https://en.wikipedia.org/wiki/Desert_Fireball_Network) and Global
 Fireball Observatory public wiki. This wiki contains documentation for
 the the DFN's fireball observatories and data processing procedures for
 collaborators and team members. The main GFO website is on
@@ -23,28 +23,28 @@ rocks!**
 Documentation to help you get your observatory up and running
 
 - [Re-configuring VPN in camera systems - 2023
-  change](Reconfigure_VPN.html)
-- [Contents of the box with DFNEXT system](Packing.html)
-- [Getting Started](Getting_Started.html)
-- [Maintenance](Camera_Maintenance.html)
-- [Troubleshooting](Camera_Troubleshooting.html)
-- [Getting Help](Getting_Help.html)
-- Frequently asked questions ([FAQ](FAQ.html))
+  change]({% link network/Reconfigure_VPN.md %})
+- [Contents of the box with DFNEXT system]({% link observatories/dfnext/Packing.md %})
+- [Getting Started]({% link Getting_Started.md %})
+- [Maintenance]({% link observatories/maintenance/index.md %})
+- [Troubleshooting]({% link observatories/maintenance/Camera_Troubleshooting.md %})
+- [Getting Help]({% link Getting_Help.md %})
+- Frequently asked questions ([FAQ]({% link FAQ.md %}))
 
 # Fireball Data
 
 How to access your fireball images and information about how the DFN
 processes fireball ev
 
-- [Accessing data](Accessing_data.html) captured by Fireball
+- [Accessing data]({% link data-processing/Accessing_data.md %}) captured by Fireball
   Observatory (still images, videos, logs)
-- [Finding Fireballs](Finding_Fireballs.html) in images
-- [Data Processing Pipeline](Data_Processing_Pipeline.html)
+- [Finding Fireballs]({% link data-processing/Finding_Fireballs.md %}) in images
+- Data Processing Pipeline
 
 # Meteorite searching
 
 - Foot searching:
-  [Meteorite_searching_advice_handbook.pdf](Media:Meteorite_searching_advice_handbook.pdf.html)
+  [Meteorite_searching_advice_handbook.pdf]({{ site.baseurl }}/images/Meteorite_searching_advice_handbook.pdf)
 - Drone Meteorite Searching:
   <https://desertfireballnetwork.github.io/drone_meteorite_doc/>
 
@@ -55,18 +55,18 @@ section are especially appreciated**
 
 Todo: find a better name for this section
 
-- [Mechanical Designs](Mechanical_Designs.html) for deploying your
+- [Mechanical Designs]({% link installations/Mechanical_Designs.md %}) for deploying your
   fireball observatory (add your stand and roof mount designs here)
-- [Cables](Cables.html) used in fireball observatories and for
+- [Cables]({% link observatories/maintenance/Cables.md %}) used in fireball observatories and for
   deployment
-- [Photos of Fireballs](Fireball_Photos.html) (add your pretty
+- [Photos of Fireballs]({% link data-processing/Fireball_Photos.md %}) (add your pretty
   fireball to the galleries here at reduced resolutions for everyone to
   see; remember this wiki is open to the public)
 - [Photos of Fireball Camera
-  Installations](Photos_of_Fireball_Camera_Installations.html)
+  Installations]({% link installations/Photos_of_Fireball_Camera_Installations.md %})
   (upload photos of your finished and in-progress installations here)
 
-# [Hayabusa](Hayabusa.html)
+# [Hayabusa]({% link campaigns/hayabusa/index.md %})
 
 # Wiki Info
 
@@ -82,10 +82,10 @@ new filetype to be added, please email DFN camera help.
 Click the DFN fireball in the upper left at any time to get back to this
 main page.
 
-[Help Editing Wiki Pages](mediawikiwiki:Help:Editing_pages.html),
-[Formatting Help](mediawikiwiki:Help:Formatting.html), [The
+[Help Editing Wiki Pages](https://www.mediawiki.org/wiki/Help:Editing_pages),
+[Formatting Help](https://www.mediawiki.org/wiki/Help:Formatting), [The
 MediaWiki
-VisualEditor](mediawikiwiki:Help:VisualEditor/User_guide.html),
-[Orphaned Pages](Special:OrphanedPages.html), [DFN Wiki To-do
-List](Wiki_To-do_List.html)
+VisualEditor](https://www.mediawiki.org/wiki/Help:VisualEditor/User_guide),
+Orphaned Pages, [DFN Wiki To-do
+List]({% link Wiki_To-do_List.md %})
 

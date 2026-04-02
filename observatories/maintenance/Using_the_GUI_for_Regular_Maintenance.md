@@ -3,9 +3,9 @@ title: "Using the Web GUI"
 parent: "Observatory Maintenance"
 grand_parent: "Observatories"
 ---
-The web-based [Graphical User Interface](Web_Interface.html) (GUI)
+The web-based [Graphical User Interface]({% link observatories/maintenance/Web_Interface.md %}) (GUI)
 can be accessed using these instructions: [Web
-Interface](Web_Interface.html)
+Interface]({% link observatories/maintenance/Web_Interface.md %})
 
 ## The basics
 
@@ -55,7 +55,7 @@ dialogue, and confirm.
 
 It should not be needed for setting up a new system. NOTE: This is not
 currently working in the GUI unfortunately; you have to use the [command
-line](Manual_Maintenance#3._Format_the_new_drives_after_replacing.html),
+line]({% link observatories/maintenance/Manual_Maintenance.md %}#3-format-the-new-drives-after-replacing),
 through a terminal.
 
 ### Interval control test

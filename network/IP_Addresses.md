@@ -2,16 +2,16 @@
 title: "IP Addresses"
 parent: "Network Access"
 ---
-An [IP address](wikipedia:IP_address.html) is the address of your
+An [IP address](https://en.wikipedia.org/wiki/IP_address) is the address of your
 observatory on the DFN's network of computers and observatories. The
-[VPN](Logging_in_remotely_over_the_network.html) is used to
+[VPN]({% link network/Logging_in_remotely_over_the_network.md %}) is used to
 connect all these computers and observatories even when they are behind
 routers or on connections that do not provide a public IP address (like
 mobile broadband connections).
 
 The IP address of your observatory depends on it's number and what model
 of observatory it is (see [Observatory
-Types](Observatory_Types.html)).
+Types]({% link Observatory_Types.md %})).
 
 DFNSMALL: `10.1.17.xx` (where xx is the observatory number)
 
@@ -23,7 +23,7 @@ FIREOPAL: `10.1.25.xxx` (where xxx is the observatory number)
 
 It is important to note that these IP addresses will only work if you
 are connected to the
-[VPN](Logging_in_remotely_over_the_network.html).
+[VPN]({% link network/Logging_in_remotely_over_the_network.md %}).
 
 # Local IP Address
 
@@ -40,7 +40,7 @@ would be `10.1.17.25` and DFNEXT009 would be `10.1.23.9`.
 
 To avoid having to remember the IP system, you can gives aliases to the
 IPs of your cameras by modifying the [hosts
-file](wikipedia:Hosts_(file) "wikilink") on **your computer**.
+file](https://en.wikipedia.org/wiki/Hosts_(file) "wikilink") on **your computer**.
 
 [How to edit your hosts file on Linux - Mac -
 Windows](https://support.rackspace.com/how-to/modify-your-hosts-file/)

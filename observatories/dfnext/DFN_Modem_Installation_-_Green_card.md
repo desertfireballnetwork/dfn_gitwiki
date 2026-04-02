@@ -6,7 +6,7 @@ grand_parent: "Observatories"
 ***These instructions are for DFN camera systems equipped with green PCB
 modem adaptor board (see images below). For DFNEXT observatories with
 blue PCB modem adaptor board please refer to [DFNEXT Modem
-Installation](DFNEXT_Modem_Installation.html).***
+Installation]({% link observatories/dfnext/DFNEXT_Modem_Installation.md %}).***
 
 The DFNEXT / DFNSMALL observatories usually ship without modems as many
 of them are deployed with WiFi or Ethernet connectivity and different
@@ -71,5 +71,5 @@ AP name (example: "telstra.m2m" for Australian Telstra M2M plans),
 Password, Username and Phone (number) to dial.
 
 The [Mobile network
-configuration](Mobile_network_configuration.html) in the
+configuration]({% link network/Mobile_network_configuration.md %}) in the
 observatory PC operating system has moved to a separate wiki page.

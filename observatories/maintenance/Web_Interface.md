@@ -54,4 +54,4 @@ operating system).
 ## Using
 
 For general use for servicing, see [Using the GUI for Regular
-Maintenance](Using_the_GUI_for_Regular_Maintenance.html).
+Maintenance]({% link observatories/maintenance/Using_the_GUI_for_Regular_Maintenance.md %}).

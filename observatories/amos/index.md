@@ -38,7 +38,7 @@ New design (on by default). Use a 2.2kΩ resistor.
 
 ## AMOS-Spec for fireballs
 
-[BIOS configuration](AMOS-Spec_fireball_BIOS_configuration.html)
+[BIOS configuration]({% link observatories/amos/AMOS-Spec_fireball_BIOS_configuration.md %})
 
 ## Replace HDD
 
