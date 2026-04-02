@@ -1,3 +1,7 @@
+---
+title: "FAQ"
+nav_order: 9
+---
 ## Frequently asked quastions
 
 **Q: Is there a way to read out the voltage of the power supply (of the

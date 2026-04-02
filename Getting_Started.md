@@ -1,3 +1,7 @@
+---
+title: "Getting Started"
+nav_order: 2
+---
 The DFN observatories use a
 [GNU/Linux](https://www.debian.org/releases/stable/amd64/ch01s02.html.en)
 operating system ([Debian](https://www.debian.org/)) and can be fully
@@ -42,8 +46,8 @@ detection data must be transferred to server. For this and other
 operational reasons, it is highy desirable for the observatories to be
 connected to the Internet.
 
-![](DFNSMALL_Advantech_PC_eth_ports_marked.jpg "DFNSMALL_Advantech_PC_eth_ports_marked.jpg")
-![](DFNSMALL_Commell_PC_eth_ports_marked.jpg "DFNSMALL_Commell_PC_eth_ports_marked.jpg")
+![DFNSMALL_Advantech_PC_eth_ports_marked.jpg]({{ site.baseurl }}/images/DFNSMALL_Advantech_PC_eth_ports_marked.jpg)
+![DFNSMALL_Commell_PC_eth_ports_marked.jpg]({{ site.baseurl }}/images/DFNSMALL_Commell_PC_eth_ports_marked.jpg)
 
 ## Ethernet port eth0
 
@@ -70,7 +74,7 @@ for help.
 
 # Connecting to Your Fireball Observatory for the First Time
 
-![](DFN_camera_network_interfaces.svg "DFN_camera_network_interfaces.svg")
+![DFN_camera_network_interfaces.svg]({{ site.baseurl }}/images/DFN_camera_network_interfaces.svg)
 You will probably want to set your fireball camera up in your lab or
 office before you install it. This will allow you to try logging in,
 configuring the camera and running a test in a comfortable environment.
@@ -140,7 +144,7 @@ Software](Configuring_the_Software.html))
 
 # Selecting an Appropriate Site for Deployment
 
-![](Bad_Quality_Image.jpg "Bad_Quality_Image.jpg")![](Perfect_calibration_image_Gabyon.jpg "Perfect_calibration_image_Gabyon.jpg")
+![Bad_Quality_Image.jpg]({{ site.baseurl }}/images/Bad_Quality_Image.jpg)![Perfect_calibration_image_Gabyon.jpg]({{ site.baseurl }}/images/Perfect_calibration_image_Gabyon.jpg)
 Easy is better than hard, you are not scouting for a site to put the
 next 10 metre class telescope! However those simple principles help
 ensure maximum science returns from the cameras:
@@ -216,7 +220,7 @@ Installation](Rooftop_Kit_Camera_Installation.html) (if your
 fireball camera has a clear top and only one lens - DFNKIT)
 
 Make your own DFNEXT/DFNSMALL DC power cable using these instructions
-![<File:DFNEXT_DC_Power_Cable_Assembly.pdf>](DFNEXT_DC_Power_Cable_Assembly.pdf "File:DFNEXT_DC_Power_Cable_Assembly.pdf").
+![![DFNEXT_DC_Power_Cable_Assembly.pdf]({{ site.baseurl }}/images/DFNEXT_DC_Power_Cable_Assembly.pdf)](DFNEXT_DC_Power_Cable_Assembly.pdf "File:DFNEXT_DC_Power_Cable_Assembly.pdf").
 Useful for solar powered (~12V) sites or in case when custom/specific
 AC/DC power supply is used.
 

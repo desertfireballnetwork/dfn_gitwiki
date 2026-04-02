@@ -1,3 +1,7 @@
+---
+title: "Taking the Wiki Offline"
+nav_order: 12
+---
 These instructions were tested on Debian 9 "Stretch", but should work on
 any POSIX-compliant system.
 

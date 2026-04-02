@@ -1,3 +1,7 @@
+---
+title: "Planetary Frontiers Workshop"
+nav_order: 11
+---
 # How to Install and Configure Your DFN Fireball Observatory
 
 Robert Howie, Benjamin Hartig and the rest of the DFN Team

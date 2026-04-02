@@ -1,3 +1,7 @@
+---
+title: "Wiki To-do List"
+nav_order: 13
+---
 - Page on how to configure you camera and run a capture control test
   (use new name when writing about it, but the script to run is still
   called interval_control.sh) [Configuring the
@@ -26,7 +30,7 @@
 - Setting up your own regional vpn
 - <s>setup dfnstation.cfg file [Configuring the
   Software](Configuring_the_Software.html)</s> mt
-- check that [:<File:Good> Quality
+- check that [:![Good]({{ site.baseurl }}/images/Good) Quality
   Image.jpg](:File:Good_Quality_Image.jpg.html) is the best image
   possible
 

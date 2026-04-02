@@ -1,3 +1,7 @@
+---
+title: "Home"
+nav_order: 1
+---
 Welcome to the [Desert Fireball
 Network's](wikipedia:Desert_Fireball_Network.html) and Global
 Fireball Observatory public wiki. This wiki contains documentation for
