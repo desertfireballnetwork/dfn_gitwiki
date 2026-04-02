@@ -1,0 +1,26 @@
+title: Desert Fireball Network Technical Wiki
+remote_theme: just-the-docs/just-the-docs
+
+nav_enabled: true
+
+plugins:
+  - jekyll-remote-theme
+
+url: "https://desertfireballnetwork.github.io"
+baseurl: "/dfn_gitwiki"
+
+exclude:
+  - README.md
+  - "**/README.md"
+
+logo: "wiki/images/logo.png"
+
+color_scheme: dark
+
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/desertfireballnetwork/dfn_gitwiki"
+gh_edit_source: wiki
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"

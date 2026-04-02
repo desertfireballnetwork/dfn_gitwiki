@@ -85,4 +85,3 @@ VisualEditor](mediawikiwiki:Help:VisualEditor/User_guide.md "wikilink"),
 [Orphaned Pages](Special:OrphanedPages.md "wikilink"), [DFN Wiki To-do
 List](Wiki_To-do_List.md "wikilink")
 
-__NOTOC__
