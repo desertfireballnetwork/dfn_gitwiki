@@ -3,13 +3,13 @@ Also see instructions from Masa-yuki-san.
 # Power
 
 Powered using 12V 100Ah+ [temporary battery with
-sunshield](temporary_battery_with_sunshield "wikilink").
+sunshield](temporary_battery_with_sunshield.md "wikilink").
 
 # Localisation
 
 Location of the instrument is NOT logged by the instrument itself. Do at
 least [handheld GPS unit
-logging](handheld_GPS_position_logging "wikilink"). AND relative
+logging](handheld_GPS_position_logging.md "wikilink"). AND relative
 position with respect to 3 nearby sites using tape measurer.
 
 # Set up

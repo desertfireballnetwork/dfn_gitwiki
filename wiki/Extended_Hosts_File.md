@@ -225,43 +225,43 @@ modify the hosts file on your local computer.
 
 ## Navigation menu
 
-- [Robert Howie](User:Robert_Howie "wikilink")
-- [Talk](User_talk:Robert_Howie "wikilink")
-- [Preferences](Special:Preferences "wikilink")
-- [Watchlist](Special:Watchlist "wikilink")
-- [Contributions](Special:Contributions/Robert_Howie "wikilink")
-- [Log out](Special:UserLogout&returnto=IP+Addresses "wikilink")
+- [Robert Howie](User:Robert_Howie.md "wikilink")
+- [Talk](User_talk:Robert_Howie.md "wikilink")
+- [Preferences](Special:Preferences.md "wikilink")
+- [Watchlist](Special:Watchlist.md "wikilink")
+- [Contributions](Special:Contributions/Robert_Howie.md "wikilink")
+- [Log out](Special:UserLogout&returnto=IP+Addresses.md "wikilink")
 
 <!-- -->
 
-- [Page](IP_Addresses "wikilink")
+- [Page](IP_Addresses.md "wikilink")
 - [Discussion](https://dfn.d-f-n.org/mediawiki/index.php?title=Talk:IP_Addresses&action=edit&redlink=1)
 
 <!-- -->
 
-- [Read](IP_Addresses "wikilink")
-- [Edit](IP_Addresses&veaction=edit "wikilink")
-- [Edit source](IP_Addresses&action=edit "wikilink")
-- [View history](IP_Addresses&action=history "wikilink")
-- [Unwatch](IP_Addresses&action=unwatch "wikilink")
+- [Read](IP_Addresses.md "wikilink")
+- [Edit](IP_Addresses&veaction=edit.md "wikilink")
+- [Edit source](IP_Addresses&action=edit.md "wikilink")
+- [View history](IP_Addresses&action=history.md "wikilink")
+- [Unwatch](IP_Addresses&action=unwatch.md "wikilink")
 
 ### More
 
-- [Main page](Main_Page "wikilink")
-- [Recent changes](Special:RecentChanges "wikilink")
-- [Random page](Special:Random "wikilink")
+- [Main page](Main_Page.md "wikilink")
+- [Recent changes](Special:RecentChanges.md "wikilink")
+- [Random page](Special:Random.md "wikilink")
 - Help
 
 ### Tools
 
-- [What links here](Special:WhatLinksHere/IP_Addresses "wikilink")
+- [What links here](Special:WhatLinksHere/IP_Addresses.md "wikilink")
 - [Related
   changes](https://dfn.d-f-n.org/mediawiki/index.php?title=Special:RecentChangesLinked/IP_Addresses)
-- [Upload file](Special:Upload "wikilink")
-- [Special pages](Special:SpecialPages "wikilink")
+- [Upload file](Special:Upload.md "wikilink")
+- [Special pages](Special:SpecialPages.md "wikilink")
 - [Printable
   version](https://dfn.d-f-n.org/mediawiki/index.php?title=IP_Addresses&printable=yes)
-- [Permanent link](IP_Addresses&oldid=440 "wikilink")
-- [Page information](IP_Addresses&action=info "wikilink")
+- [Permanent link](IP_Addresses&oldid=440.md "wikilink")
+- [Page information](IP_Addresses&action=info.md "wikilink")
 - [Cite this
-  page](Special:CiteThisPage&page=IP_Addresses&id=440 "wikilink")
+  page](Special:CiteThisPage&page=IP_Addresses&id=440.md "wikilink")

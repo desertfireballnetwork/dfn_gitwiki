@@ -1,7 +1,7 @@
 # Settings
 
 - reset camera to factory settings.
-- for Nikon go through the [DSLR_Settings](DSLR_Settings "wikilink")
+- for Nikon go through the [DSLR_Settings](DSLR_Settings.md "wikilink")
   checklist. For other, essentially make sure the camera is recording in
   RAW mode, and that stuff like long exposure noise reduction or other
   types of corrections are OFF.

@@ -1,7 +1,7 @@
 The DFNEXT fireball observatory is a revision of the DFN's digital
 fireball observatory specifically created to facilitate the global
 fireball observatory. It is the successor to the
-[DFNSMALL](DFNSMALL "wikilink") design. The primary objective of the
+[DFNSMALL](DFNSMALL.md "wikilink") design. The primary objective of the
 revision was to make maintenance easier for collaborators.
 
 The first production run of EXT systems started in January 2017 and the
@@ -55,7 +55,7 @@ title="Internals_of_DFNEXT_installed_in_Northam.jpg" />
 ## Assembly, deployment and maintenance
 
 To assemble the remote observatory follow the instructions found in
-[DFNEXT Assembly](DFNEXT_Assembly "wikilink").
+[DFNEXT Assembly](DFNEXT_Assembly.md "wikilink").
 
 Here are instructions on [Mobile network - 3G/4G modem installation and
-configuration](Mobile_network_-_3G,_4G "wikilink").
+configuration](Mobile_network_-_3G,_4G.md "wikilink").
