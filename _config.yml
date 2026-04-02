@@ -13,7 +13,7 @@ exclude:
   - README.md
   - "**/README.md"
 
-logo: "wiki/images/logo.png"
+logo: "images/logo.png"
 
 color_scheme: dark
 
@@ -21,6 +21,5 @@ color_scheme: dark
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/desertfireballnetwork/dfn_gitwiki"
-gh_edit_source: wiki
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
