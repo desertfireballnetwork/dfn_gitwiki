@@ -37,9 +37,11 @@ it crashed). It is in crontab just at the end. The best way to make sure
 it is not going to ruin the valuable timed capture is to comment that
 line(s) out completely:
 
-` ### restart freeture if crashed`
-` #0-50/10 * * * * systemctl status freeture.service | grep running || systemctl restart freeture.service`
-` #0-50/10 7-19 * * * systemctl status freeture.service | grep running || systemctl restart freeture.service`
+```
+ ### restart freeture if crashed
+ #0-50/10 * * * * systemctl status freeture.service | grep running || systemctl restart freeture.service
+ #0-50/10 7-19 * * * systemctl status freeture.service | grep running || systemctl restart freeture.service
+```
 
 The recorded frames go to /data0/video_frames/; a subfolder is created
 for each night.

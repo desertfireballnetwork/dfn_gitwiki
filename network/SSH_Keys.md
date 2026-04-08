@@ -212,9 +212,11 @@ Open a terminal window and run the command:
 
 The output will look something like this:
 
-`SSH_AUTH_SOCK=/tmp/ssh-DODfkAlnVz9s/agent.22714; export SSH_AUTH_SOCK;`
-`SSH_AGENT_PID=22715; export SSH_AGENT_PID;`
-`echo Agent pid 22715;`
+```
+SSH_AUTH_SOCK=/tmp/ssh-DODfkAlnVz9s/agent.22714; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=22715; export SSH_AGENT_PID;
+echo Agent pid 22715;
+```
 
 Copy the output, paste it back into the terminal and press enter to
 connect up your SSH agent.

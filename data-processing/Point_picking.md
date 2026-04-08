@@ -38,13 +38,15 @@ The usage function is helpful, read it:
 
 In particular:
 
-`    -i IMAGE_PATH, --image_path IMAGE_PATH`
-`                          Path to fireball image (REQUIRED)`
-`    -e PREVIOUS_POINTS_PATH, --previous_points_path PREVIOUS_POINTS_PATH`
-`                          Previously picked ecsv (OPTIONAL, if you want to repick a fireball)`
-`    -n STARTSEQINDEX, --startSeqIndex STARTSEQINDEX (OPTIONAL)`
-`                          - auto attempts to find existing point picking for that event, give you  about those, and lets you interactively choose.`
-`                          - an integer will jump straight to the corresponding De Bruijn sequence number `
+```
+    -i IMAGE_PATH, --image_path IMAGE_PATH
+                          Path to fireball image (REQUIRED)
+    -e PREVIOUS_POINTS_PATH, --previous_points_path PREVIOUS_POINTS_PATH
+                          Previously picked ecsv (OPTIONAL, if you want to repick a fireball)
+    -n STARTSEQINDEX, --startSeqIndex STARTSEQINDEX (OPTIONAL)
+                          - auto attempts to find existing point picking for that event, give you  about those, and lets you interactively choose.
+                          - an integer will jump straight to the corresponding De Bruijn sequence number 
+```
 
 **Use - controls**
 
@@ -69,12 +71,14 @@ mouse right button ... delete last dropped point
 
 if you get this error:
 
-`$ python point_picker.py -i /home/NAS_clone_m/events_trello/DN161031_01/16_Perenjori/16_2016-10-31_120328_S_DSC_0326-G.tiff`
-`This application failed to start because it could not find or load the Qt platform plugin "xcb"`
-`in "".`
-`Available platform plugins are: minimal, offscreen, xcb.`
-`Reinstalling the application may fix this problem.`
-`Aborted (core dumped)`
+```
+$ python point_picker.py -i /home/NAS_clone_m/events_trello/DN161031_01/16_Perenjori/16_2016-10-31_120328_S_DSC_0326-G.tiff
+This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+Available platform plugins are: minimal, offscreen, xcb.
+Reinstalling the application may fix this problem.
+Aborted (core dumped)
+```
 
 Set the following environment variable each time before running the
 point picker:

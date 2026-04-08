@@ -23,30 +23,34 @@ and then activate the interface again (ifup wlan0).
 The default (master mode) state is (here displayed only the USB WiFi
 sub-section of the /etc/network/interfaces file):
 
-`### USB WiFi stick`
-`auto wlan0`
-`allow-hotplug wlan0`
-`### DHCP`
-`#iface wlan0 inet dhcp`
-`### static`
-`#set IP address that is not in the DHCP pool of local wifi router`
-`#also subnet must not clash with eth1 subnet above`
+```
+### USB WiFi stick
+auto wlan0
+allow-hotplug wlan0
+### DHCP
+#iface wlan0 inet dhcp
+### static
+#set IP address that is not in the DHCP pool of local wifi router
+#also subnet must not clash with eth1 subnet above
+```
 **`iface wlan0 inet static`**
 **`address 172.16.0.101`**
 **`network 172.16.0.0`**
 **`netmask 255.255.255.0`**
 **`post-up service isc-dhcp-server restart`**
-`   ### WPA/WPA2 section for client mode ###`
-`#      wpa-ssid test1`
-`#      wpa-psk fireball`
-`      ### following two options are not necessary `
-`      ### - but the WiFi AP must be set to use encoding TKIP, not AES!`
-`      #wpa-key-mgmt WPA-PSK`
-`      #wpa-group TKIP`
-`   ### WEP section for client mode ###`
-`      #wireless-essid test1`
-`      #wireless-key F9674C82E0`
-`   ### hostapd - all client mode settings must be commented out ###`
+```
+   ### WPA/WPA2 section for client mode ###
+#      wpa-ssid test1
+#      wpa-psk fireball
+      ### following two options are not necessary 
+      ### - but the WiFi AP must be set to use encoding TKIP, not AES!
+      #wpa-key-mgmt WPA-PSK
+      #wpa-group TKIP
+   ### WEP section for client mode ###
+      #wireless-essid test1
+      #wireless-key F9674C82E0
+   ### hostapd - all client mode settings must be commented out ###
+```
 `      `**`hostapd /etc/hostapd/hostapd.conf`**
 
 The details for AP/master configuration including the AP name and
@@ -56,31 +60,37 @@ For the client mode, we need to comment out the bold text from above and
 uncomment a few commented lines. Your local WiFi network most likely
 will use WPA2 encryption, but there is WEP option possible as well.
 
-`### USB WiFi stick`
-`auto wlan0`
-`allow-hotplug wlan0`
-`### DHCP`
+```
+### USB WiFi stick
+auto wlan0
+allow-hotplug wlan0
+### DHCP
+```
 **`iface wlan0 inet dhcp`**
-`### static`
-`#set IP address that is not in the DHCP pool of local wifi router`
-`#also subnet must not clash with eth1 subnet above`
-`# iface wlan0 inet static`
-`#       address 172.16.0.101`
-`#       network 172.16.0.0`
-`#       netmask 255.255.255.0`
-`#       post-up service isc-dhcp-server restart`
-`   ### WPA/WPA2 section for client mode ###`
+```
+### static
+#set IP address that is not in the DHCP pool of local wifi router
+#also subnet must not clash with eth1 subnet above
+# iface wlan0 inet static
+#       address 172.16.0.101
+#       network 172.16.0.0
+#       netmask 255.255.255.0
+#       post-up service isc-dhcp-server restart
+   ### WPA/WPA2 section for client mode ###
+```
 `      `**`wpa-ssid test1`**
 `      `**`wpa-psk fireball`**
-`      ### following two options are not necessary `
-`      ### - but the WiFi AP must be set to use encoding TKIP, not AES!`
-`      #wpa-key-mgmt WPA-PSK`
-`      #wpa-group TKIP`
-`   ### WEP section for client mode ###`
-`      #wireless-essid test1`
-`      #wireless-key F9674C82E0`
-`   ### hostapd - all client mode settings must be commented out ###`
-`#       hostapd /etc/hostapd/hostapd.conf`
+```
+      ### following two options are not necessary 
+      ### - but the WiFi AP must be set to use encoding TKIP, not AES!
+      #wpa-key-mgmt WPA-PSK
+      #wpa-group TKIP
+   ### WEP section for client mode ###
+      #wireless-essid test1
+      #wireless-key F9674C82E0
+   ### hostapd - all client mode settings must be commented out ###
+#       hostapd /etc/hostapd/hostapd.conf
+```
 
 Obviously one needs to put in the specific local WiFi network name
 (wpa-ssid) and password (wpa-psk).

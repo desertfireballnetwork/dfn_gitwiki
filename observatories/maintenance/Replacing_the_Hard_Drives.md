@@ -13,8 +13,10 @@ Firstly, for all cameras, ensure hard drives are not mounted (i.e.
 If they appear, they will need to be unmounted and any enclosures
 disabled:
 
-`$ umount /data1`
-`$ /opt/dfn-software/disable_ext-hd.py  # this is for DFN-EXT and DFNSMALL only, not necessary for kits.`
+```
+$ umount /data1
+$ /opt/dfn-software/disable_ext-hd.py  # this is for DFN-EXT and DFNSMALL only, not necessary for kits.
+```
 
 Depending on your camera model, the drives can be swapped as follows:
 

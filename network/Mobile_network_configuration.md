@@ -42,15 +42,17 @@ both configuration files.
 For Sierra MC8705 3G modem with Telstra M2M plan is the configuration as
 shown on a corresponding section of file /etc/network/interfaces.
 
-`### Optus/Telstra mobile data GSM/3G/4G`
-`### with modem/ppp interface`
-`### primary network interface in the field, default route`
-`auto ppp0`
-`allow-hotplug ppp0`
-`iface ppp0 inet wvdial`
-`#provider optus_multitech`
-`#provider optus_sierra_MC8705`
-`#provider telstra_multitech`
+```
+### Optus/Telstra mobile data GSM/3G/4G
+### with modem/ppp interface
+### primary network interface in the field, default route
+auto ppp0
+allow-hotplug ppp0
+iface ppp0 inet wvdial
+#provider optus_multitech
+#provider optus_sierra_MC8705
+#provider telstra_multitech
+```
 `provider `**`telstra_sierra_MC8705`**
 `#provider telstra_sierra_MC7430`
 
@@ -62,12 +64,14 @@ There are a few more configurations pre-set in file /etc/wvdial.conf.
 The corresponding detailed section for our case looks like:
 
 `[Dialer `**`telstra_sierra_MC8705`**`]`
-`Stupid Mode = 1`
-`Init3 = AT+CGDCONT=1,"IP","telstra.m2m"`
-`Modem = /dev/ttyUSB4`
-`Password = guest`
-`Username = guest`
-`Phone = *99#`
+```
+Stupid Mode = 1
+Init3 = AT+CGDCONT=1,"IP","telstra.m2m"
+Modem = /dev/ttyUSB4
+Password = guest
+Username = guest
+Phone = *99#
+```
 
 ## Sierra MC7430 or MC7455 3G/4G modem, all DFNEXT camera systems
 
@@ -75,13 +79,17 @@ The corresponding detailed section for our case looks like:
 
 Make sure following parameters are passed to kernel at boot time
 
-`net.ifnames=0 `
-`biosdevname=0`
+```
+net.ifnames=0 
+biosdevname=0
+```
 
 How to check current state:
 
-`cat /proc/cmdline `
-`BOOT_IMAGE=/boot/vmlinuz-4.9.0-14-amd64 root=UUID=956f7edb-eeb2-4059-a682-efd1760c88f8 ro quiet net.ifnames=0 biosdevname=0 nomodeset usbcore.usbfs_memory_mb=1000`
+```
+cat /proc/cmdline 
+BOOT_IMAGE=/boot/vmlinuz-4.9.0-14-amd64 root=UUID=956f7edb-eeb2-4059-a682-efd1760c88f8 ro quiet net.ifnames=0 biosdevname=0 nomodeset usbcore.usbfs_memory_mb=1000
+```
 
 How to set:
 
@@ -140,34 +148,38 @@ than the one you are just setting up.
 This is specific for each operator. Examples below - only one should be
 uncommented:
 
-`### COMMON FOR ALL OR MOST OPARTORS`
-`### USER & PASS usually not needed`
-`'''APN_USER=guest`
-`APN_PASS=guest'''`
-`PROXY=yes`
-`###-----------------------`
-`### Australia Telstra`
+```
+### COMMON FOR ALL OR MOST OPARTORS
+### USER & PASS usually not needed
+'''APN_USER=guest
+APN_PASS=guest'''
+PROXY=yes
+###-----------------------
+### Australia Telstra
+```
 **`APN=telstra.m2m`**
-`###-----------------------`
-`### Australia Optus`
-`# APN=connect`
-`###-----------------------`
-`### Canada Telus`
-`#APN=isp.telus.com`
-`###-----------------------`
-`### Oman Omantel`
-`# APN=taif`
-`# APN_USER=taif`
-`# APN_PASS=taif`
-`###-----------------------`
-`### KSA Saudi Telecom Company (STC) "JAWALNet"`
-`# APN=jawalnet.com.sa`
-`###-----------------------`
-`### Australia Aldimobile`
-`# if the 1st one does not work, use the Telstra one below`
-`# APN=mdata.net.au`
-`# APN=Telstra.internet`
-`###-----------------------`
+```
+###-----------------------
+### Australia Optus
+# APN=connect
+###-----------------------
+### Canada Telus
+#APN=isp.telus.com
+###-----------------------
+### Oman Omantel
+# APN=taif
+# APN_USER=taif
+# APN_PASS=taif
+###-----------------------
+### KSA Saudi Telecom Company (STC) "JAWALNet"
+# APN=jawalnet.com.sa
+###-----------------------
+### Australia Aldimobile
+# if the 1st one does not work, use the Telstra one below
+# APN=mdata.net.au
+# APN=Telstra.internet
+###-----------------------
+```
 
 Other apn codes [1](https://www.apnsettings.org/)
 [2](https://apn.how/) - example for Australia:
@@ -177,29 +189,33 @@ Other apn codes [1](https://www.apnsettings.org/)
 
 Comment out the ppp0 interface start lines:
 
-`#auto ppp0`
-`#allow-hotplug ppp0`
+```
+#auto ppp0
+#allow-hotplug ppp0
+```
 
 Make sure there is wwan0 section as below, with interface start lines
 uncommented:
 
-`### alternative config for 3G/4G Sierra MC 7430/7455 via qmi lib`
-`### needs wwan0 interface rather than ppp0`
-`### in grub, pass kernel param net.ifnames=0 `
-`### configure operator APN in /etc/qmi-network.conf`
-`### depends on script /usr/local/bin/qmi-network-raw-dfn`
-`### >>>> uncomment also 'allow-hotplug line <<<<`
-`### >>>> not only 'auto' when enabling wwan0 <<<<`
-`auto wwan0`
-`allow-hotplug wwan0`
-`iface wwan0 inet manual`
-`     pre-up ifconfig wwan0 down`
-`     pre-up ifconfig wwan1 down # only needed if the modem presents two wwan interfaces`
-`     pre-up /usr/local/bin/qmi-network-raw-dfn printsignal`
-`     pre-up /usr/local/bin/qmi-network-raw-dfn forcerestart`
-`     pre-up udhcpc -p /var/run/udhcpc.wwan0.pid -S -t 5 -b -i wwan0`
-`     post-up grep "nameserver 4.2.2.1" || echo "nameserver 4.2.2.1" >> /etc/resolv.conf`
-`     post-down /usr/local/bin/qmi-network-raw-dfn stop`
+```
+### alternative config for 3G/4G Sierra MC 7430/7455 via qmi lib
+### needs wwan0 interface rather than ppp0
+### in grub, pass kernel param net.ifnames=0 
+### configure operator APN in /etc/qmi-network.conf
+### depends on script /usr/local/bin/qmi-network-raw-dfn
+### >>>> uncomment also 'allow-hotplug line <<<<
+### >>>> not only 'auto' when enabling wwan0 <<<<
+auto wwan0
+allow-hotplug wwan0
+iface wwan0 inet manual
+     pre-up ifconfig wwan0 down
+     pre-up ifconfig wwan1 down # only needed if the modem presents two wwan interfaces
+     pre-up /usr/local/bin/qmi-network-raw-dfn printsignal
+     pre-up /usr/local/bin/qmi-network-raw-dfn forcerestart
+     pre-up udhcpc -p /var/run/udhcpc.wwan0.pid -S -t 5 -b -i wwan0
+     post-up grep "nameserver 4.2.2.1" || echo "nameserver 4.2.2.1" >> /etc/resolv.conf
+     post-down /usr/local/bin/qmi-network-raw-dfn stop
+```
 ``      post-down kill -TERM `head -1 /var/run/udhcpc.wwan0.pid` ``
 
 ### Add following line to crontab to make sure the wwan0 is restarted when it accidentally goes down
@@ -225,20 +241,24 @@ The BIOS version can be printed using the following linux command:
 
 Which prints eg:
 
-`SKLU_4.0.0.362`
-`09/19/2016`
+```
+SKLU_4.0.0.362
+09/19/2016
+```
 
 The following box is wvdial.conf config section for Sierra MC7430 3G/4G
 modem in Australia. Please mind to uncomment the appropriate line
 **telstra_sierra_MC7430** in /etc/network/interfaces.
 
-`[Dialer telstra_sierra_MC7430]`
-`Stupid Mode = 1`
-`Init3 = AT+CGDCONT=1,"IP","telstra.m2m"`
-`Modem = /dev/ttyUSB2`
-`Password = guest`
-`Username = guest`
-`Phone = *99#`
+```
+[Dialer telstra_sierra_MC7430]
+Stupid Mode = 1
+Init3 = AT+CGDCONT=1,"IP","telstra.m2m"
+Modem = /dev/ttyUSB2
+Password = guest
+Username = guest
+Phone = *99#
+```
 
 Please contact your service provider for details like AP name (here
 "telstra.m2m"), Password, Username and Phone (number) to dial. The
@@ -273,17 +293,19 @@ modify those lines:
 and then you open /etc/network/interfaces, comment out all the
 'provider' lines and add your one:
 
-`### Optus/Telstra mobile data GSM/3G/4G`
-`### with modem/ppp interface`
-`### primary network interface in the field, default route`
-`auto ppp0`
-`allow-hotplug ppp0`
-`iface ppp0 inet wvdial`
-`#provider optus_multitech`
-`#provider optus_sierra_MC8705`
-`#provider telstra_multitech`
-`#provider telstra_sierra_MC8705`
-`#provider telstra_sierra_MC7430`
+```
+### Optus/Telstra mobile data GSM/3G/4G
+### with modem/ppp interface
+### primary network interface in the field, default route
+auto ppp0
+allow-hotplug ppp0
+iface ppp0 inet wvdial
+#provider optus_multitech
+#provider optus_sierra_MC8705
+#provider telstra_multitech
+#provider telstra_sierra_MC8705
+#provider telstra_sierra_MC7430
+```
 `provider `**`YOUR_OPERATOR_sierra_MC7455`**
 
 ## Checking the quality of reception - signal strength

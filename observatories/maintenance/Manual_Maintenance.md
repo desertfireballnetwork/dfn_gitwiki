@@ -42,9 +42,11 @@ General notes:
 In case of **DFNEXT** observatories, wait at least 20 seconds fro the
 drives to spin up. then mount the drives:
 
-`$ mount /data1`
-`$ mount /data2`
-`$ mount /data3`
+```
+$ mount /data1
+$ mount /data2
+$ mount /data3
+```
 
 In case of **DFNSMALL** observatories, wait at least 40 seconds fro the
 system to recognize the USB enclosure and spin up the drives and then
@@ -60,9 +62,11 @@ The next step is to list the drives - we are interested only in the
 In case of **DFNEXT** observatory with three 6TB removable drives
 installed and running for several weeks, you will get listing like this:
 
-`Filesystem      Size  Used Avail Use% Mounted on`
-`...`
-`/dev/sda3       390G   55G  316G  15% /data0`
+```
+Filesystem      Size  Used Avail Use% Mounted on
+...
+/dev/sda3       390G   55G  316G  15% /data0
+```
 `/dev/sdb1       5.5T  1.1T  4.2T  21% /data1    `*`..... This drive is 21% full`*
 `/dev/sdd1       5.5T   58M  5.2T   1% /data2    `*`..... This drive is empty`*
 `/dev/sdc1       5.5T   89M  5.2T   1% /data3    `*`..... This drive is empty`*
@@ -71,9 +75,11 @@ In case of **DFSMALL** observatory with two 8TB removable drives
 installed and runnin \$ cd /data0/DFNXXXNN/YYYY/MM/g for more than 1/2
 year, now pretty much full of data, you will see:
 
-`Filesystem      Size  Used Avail Use% Mounted on`
-`...`
-`/dev/sda5       406G   59G  327G  16% /data0`
+```
+Filesystem      Size  Used Avail Use% Mounted on
+...
+/dev/sda5       406G   59G  327G  16% /data0
+```
 `/dev/sdc1       7.3T  6.8T   90G  99% /data1    `*`..... This drive is full`*
 `/dev/sdb1       7.3T  6.5T  367G  95% /data2    `*`..... This drive is nearly full`*
 
@@ -90,18 +96,22 @@ In case of **DFNEXT** observatory:
 
 *Note: this command actually internally calls also these commands*
 
-`$ umount /data1 /data2 /data3`
-`$ echo 1 > /sys/block/sdb/device/delete`
-`$ echo 1 > /sys/block/sdc/device/delete`
-`$ echo 1 > /sys/block/sdd/device/delete`
+```
+$ umount /data1 /data2 /data3
+$ echo 1 > /sys/block/sdb/device/delete
+$ echo 1 > /sys/block/sdc/device/delete
+$ echo 1 > /sys/block/sdd/device/delete
+```
 
 *so there is no need to run these individually in case of nominal
 conditions.*
 
 In case of **DFSMALL** observatory:
 
-`$ umount /data1 /data2`
-`$ python /opt/dfn-software/disable_ext-hd.py`
+```
+$ umount /data1 /data2
+$ python /opt/dfn-software/disable_ext-hd.py
+```
 
 ### SMART disk diagnostics
 
@@ -111,58 +121,72 @@ using smartmontools.
 To figure out what drives there are, turn them on and mount first, then
 use lsblk:
 
-`root@DFNEXT018:~# lsblk`
-`NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT`
-`sda      8:0    0   477G  0 disk `
-`├─sda1   8:1    0  31.3G  0 part /`
-`├─sda2   8:2    0     4G  0 part [SWAP]`
-`└─sda3   8:3    0 396.3G  0 part /data0`
-`sdb      8:16   0   5.5T  0 disk `
-`└─sdb1   8:17   0   5.5T  0 part /data3`
-`sdc      8:32   0   9.1T  0 disk `
-`└─sdc1   8:33   0   9.1T  0 part /data2`
-`sdd      8:48   0   9.1T  0 disk `
-`└─sdd1   8:49   0   9.1T  0 part /data1`
+```
+root@DFNEXT018:~# lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   477G  0 disk 
+├─sda1   8:1    0  31.3G  0 part /
+├─sda2   8:2    0     4G  0 part [SWAP]
+└─sda3   8:3    0 396.3G  0 part /data0
+sdb      8:16   0   5.5T  0 disk 
+└─sdb1   8:17   0   5.5T  0 part /data3
+sdc      8:32   0   9.1T  0 disk 
+└─sdc1   8:33   0   9.1T  0 part /data2
+sdd      8:48   0   9.1T  0 disk 
+└─sdd1   8:49   0   9.1T  0 part /data1
+```
 
 To check drives SMART status, watch for the highlighted parameters:
 
-`root@DFNEXT018:~# smartctl -a /dev/sdb`
-`smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.9.0-19-amd64] (local build)`
-`Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org`
+```
+root@DFNEXT018:~# smartctl -a /dev/sdb
+smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.9.0-19-amd64] (local build)
+Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
+```
 
-`=== START OF INFORMATION SECTION ===`
-`Model Family:     Western Digital Red`
-`Device Model:     WDC WD60EFRX-68MYMN1`
-`Serial Number:    WD-WX31D55DFVC4`
-`LU WWN Device Id: 5 0014ee 2b6ef65ab`
-`Firmware Version: 82.00A82`
-`User Capacity:    6,001,175,126,016 bytes [6.00 TB]`
-`Sector Sizes:     512 bytes logical, 4096 bytes physical`
-`Rotation Rate:    5700 rpm`
-`Device is:        In smartctl database [for details use: -P show]`
-`ATA Version is:   ACS-2, ACS-3 T13/2161-D revision 3b`
-`SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)`
-`Local Time is:    Fri Sep 12 11:00:46 2025 AEST`
-`SMART support is: Available - device has SMART capability.`
-`SMART support is: Enabled`
-` `
-`... `
+```
+=== START OF INFORMATION SECTION ===
+Model Family:     Western Digital Red
+Device Model:     WDC WD60EFRX-68MYMN1
+Serial Number:    WD-WX31D55DFVC4
+LU WWN Device Id: 5 0014ee 2b6ef65ab
+Firmware Version: 82.00A82
+User Capacity:    6,001,175,126,016 bytes [6.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5700 rpm
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ACS-2, ACS-3 T13/2161-D revision 3b
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Fri Sep 12 11:00:46 2025 AEST
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+ 
+... 
+```
 
-`'''196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0`
-`'''197 Current_Pending_Sector  0x0032   200   200   000    Old_age   Always       -       0`
-`'''198 Offline_Uncorrectable   0x0030   100   253   000    Old_age   Offline      -       0`
-`199 UDMA_CRC_Error_Count    0x0032   200   200   000    Old_age   Always       -       0`
-`200 Multi_Zone_Error_Rate   0x0008   100   253   000    Old_age   Offline      -       0`
+```
+'''196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0
+'''197 Current_Pending_Sector  0x0032   200   200   000    Old_age   Always       -       0
+'''198 Offline_Uncorrectable   0x0030   100   253   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x0032   200   200   000    Old_age   Always       -       0
+200 Multi_Zone_Error_Rate   0x0008   100   253   000    Old_age   Offline      -       0
+```
 
-`SMART Error Log Version: 1`
-`No Errors Logged`
+```
+SMART Error Log Version: 1
+No Errors Logged
+```
 
-`SMART Self-test log structure revision number 1`
-`Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error`
+```
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+```
 **`# 1 Short offline Completed without error 00% 83 -`**
-`# 2  Short offline       Completed without error       00%        71         -`
-`# 3  Short offline       Completed without error       00%         0         -`
-`...`
+```
+# 2  Short offline       Completed without error       00%        71         -
+# 3  Short offline       Completed without error       00%         0         -
+...
+```
 
 To start short test:
 
@@ -205,13 +229,17 @@ Power on the enclosure with hard drives and start the formatting script:
 wait 20 seconds, then probe the observatory type and HDDs connection
 type
 
-`$ cd /root/bin`
-`$ ./dfn_setup_data_hdds.sh -p`
+```
+$ cd /root/bin
+$ ./dfn_setup_data_hdds.sh -p
+```
 
 prints
 
-`Probe result: DFNEXT SATA /dev/sdb data2 /dev/sdc data3 /dev/sdd data1`
-`Suggested command to format all drives: /root/bin/dfn_setup_data_hdds.sh /dev/sdb data1 /dev/sdc data2 /dev/sdd data3`
+```
+Probe result: DFNEXT SATA /dev/sdb data2 /dev/sdc data3 /dev/sdd data1
+Suggested command to format all drives: /root/bin/dfn_setup_data_hdds.sh /dev/sdb data1 /dev/sdc data2 /dev/sdd data3
+```
 
 To format all three drives, just execute the suggested command (the
 dataX labelling will be re-created)
@@ -226,18 +254,20 @@ are not to be wiped), execute the suggested command
 Please note the sdd being originally /data1. It is also possible to
 check which HDD is which in the data move log, eg:
 
-`$ less /data0/log/move_data/move_data_2025-04-02*log`
-`...`
-`Camera type / HW probe result: DFNEXT, removable drive(s) type:  SATA`
-`/data1 /dev/sdd1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: 2YJP7J4D`
-`/data2 /dev/sdb1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: JEHM02DN`
-`/data3 /dev/sdc1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: JEHMY40N`
-`Filesystem      Size  Used Avail Use% Mounted on`
-`/dev/sda3       390G  1.3G  369G   1% /data0`
-`/dev/sdd1       9.1T  3.8T  4.8T  45% /data1`
-`/dev/sdb1       9.1T   32K  8.6T   1% /data2`
-`/dev/sdc1       9.1T   32K  8.6T   1% /data3`
-`...`
+```
+$ less /data0/log/move_data/move_data_2025-04-02*log
+...
+Camera type / HW probe result: DFNEXT, removable drive(s) type:  SATA
+/data1 /dev/sdd1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: 2YJP7J4D
+/data2 /dev/sdb1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: JEHM02DN
+/data3 /dev/sdc1 Device Model: WDC WD100EFAX-68LHPN0 Serial Number: JEHMY40N
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3       390G  1.3G  369G   1% /data0
+/dev/sdd1       9.1T  3.8T  4.8T  45% /data1
+/dev/sdb1       9.1T   32K  8.6T   1% /data2
+/dev/sdc1       9.1T   32K  8.6T   1% /data3
+...
+```
 
 *Note: The formatting procedure includes SMART selftest of all the
 drives.*
@@ -252,10 +282,12 @@ power them off.
 
 *Note: this command actually internally calls also these commands*
 
-`$ umount /data1 /data2 /data3`
-`$ echo 1 > /sys/block/sdb/device/delete`
-`$ echo 1 > /sys/block/sdc/device/delete`
-`$ echo 1 > /sys/block/sdd/device/delete`
+```
+$ umount /data1 /data2 /data3
+$ echo 1 > /sys/block/sdb/device/delete
+$ echo 1 > /sys/block/sdc/device/delete
+$ echo 1 > /sys/block/sdd/device/delete
+```
 
 *so there is no need to run these individually in case of nominal
 conditions.*
@@ -268,8 +300,10 @@ Power on the enclosure with hard drives and start the formatting script:
 
 wait 40 seconds
 
-`$ cd /root/bin`
-`$ ./setup_usb_hdds_jmicron.sh`
+```
+$ cd /root/bin
+$ ./setup_usb_hdds_jmicron.sh
+```
 
 When prompted, for various settings:
 
@@ -282,22 +316,26 @@ When prompted, for various settings:
 \- wait for quick smart self test to finish, check result for the 1st
 drive, particularly the following lines:
 
-`...`
-`196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0`
-`197 Current_Pending_Sector  0x0032   200   200   000    Old_age   Always       -       0`
-`198 Offline_Uncorrectable   0x0030   100   253   000    Old_age   Offline      -       0`
-`...`
-`# 1  Short offline       Completed without error       00%       586         -`
-`... `
+```
+...
+196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0032   200   200   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0030   100   253   000    Old_age   Offline      -       0
+...
+# 1  Short offline       Completed without error       00%       586         -
+... 
+```
 
 \- press enter, check result for the 2nd drive the same way
 
 \- At the end, check that the freshly formated drives mounted and the
 expected capacities are listed
 
-`Filesystem      Size  Used Avail Use% Mounted on`
-`/dev/sdb1       5.5T   58M  5.2T   1% /data2    ..... this is 6TB drive`
-`/dev/sdc1       3.6T   68M  3.4T   1% /data1    ..... this is 4TB drive`
+```
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb1       5.5T   58M  5.2T   1% /data2    ..... this is 6TB drive
+/dev/sdc1       3.6T   68M  3.4T   1% /data1    ..... this is 4TB drive
+```
 
 And finally power off the
 
@@ -315,8 +353,10 @@ from the camera.
 
 To check if there are images on the camera CF card:
 
-`$ python /opt/dfn-software/enable_camera.py`
-`$ gphoto2 -L -R    # this will list all files on camera`
+```
+$ python /opt/dfn-software/enable_camera.py
+$ gphoto2 -L -R    # this will list all files on camera
+```
 
 To format the CF card, see the dedicated instruction [page
 here]({{ site.baseurl }}{% link observatories/maintenance/Formatting_the_CF_Card.md %}).
@@ -339,8 +379,10 @@ To monitor interval test as it goes (in other terminal):
 Check there are ~10 pictures taken at the time test was run in previous
 images
 
-`$ cd /data0/latest_prev`
-`$ ls`
+```
+$ cd /data0/latest_prev
+$ ls
+```
 
 ## Configure timeozne
 
@@ -386,13 +428,17 @@ before turning the power on again.*
 
 ## Check Shutter Count
 
-`$ cd /data0/latest_prev    `
-`or folder with the format:`
-`$ cd /data0/DFNXXXNN/YYYY/MM/YYYY-MM-DD_DFNXXXNN_1XXXXXXXXX`
+```
+$ cd /data0/latest_prev    
+or folder with the format:
+$ cd /data0/DFNXXXNN/YYYY/MM/YYYY-MM-DD_DFNXXXNN_1XXXXXXXXX
+```
 
-`$ exiv2 -p a **image**.NEF | grep hutter`
-`or`
-`$ grep hutter *interval.txt`
+```
+$ exiv2 -p a **image**.NEF | grep hutter
+or
+$ grep hutter *interval.txt
+```
 
 ## Checking GPS
 
@@ -416,8 +462,10 @@ control test]({{ site.baseurl }}{% link observatories/maintenance/Configuring_th
 or by regular overnight operation. In case of nominal GPS functionality,
 the ntp NMEA/PPS time correction should be active:
 
-`INFO, interval_control_lin, ntp, +SHM(0),.NMEA.,0,l,9,16,377,0.000,-11.851,3.472`
-`INFO, interval_control_lin, ntp, *SHM(1),.PPS.,0,l,9,16,377,0.000,0.022,0.008`
+```
+INFO, interval_control_lin, ntp, +SHM(0),.NMEA.,0,l,9,16,377,0.000,-11.851,3.472
+INFO, interval_control_lin, ntp, *SHM(1),.PPS.,0,l,9,16,377,0.000,0.022,0.008
+```
 
 and coordinates should be passed from the GPS receiver (the last number
 '1' means GPS has lock:
@@ -638,14 +686,18 @@ bold lines below - and it finishes with system reboot.
 ` root@DFNEXT036:~# `**`/root/bin/post_clone_config_gen3.sh`**
 ` eth0/1 ports configurations based on MAC addresses`
 ` Configure which ethernet port is eth0 and eth1 [Y|n]: `**`Y`**
-` there are two Ethernet ports with MAC addresses:`
-` Possible configuration options:`
-` [a]   eth0 laptop local connection: 00:03:1d:12:3f:d8   eth1 Internet connection: 00:03:1d:12:3f:d7`
-` [b]   eth0 laptop local connection: 00:03:1d:12:3f:d7   eth1 Internet connection: 00:03:1d:12:3f:d8`
+```
+ there are two Ethernet ports with MAC addresses:
+ Possible configuration options:
+ [a]   eth0 laptop local connection: 00:03:1d:12:3f:d8   eth1 Internet connection: 00:03:1d:12:3f:d7
+ [b]   eth0 laptop local connection: 00:03:1d:12:3f:d7   eth1 Internet connection: 00:03:1d:12:3f:d8
+```
 ` Select a or b (a is default): `**`a`**
-` Selection made:  eth0 00:03:1d:12:3f:d8  eth1 00:03:1d:12:3f:d7`
-` This change will become effective after system re-boot or possibly by re-starting the interfaces (ifdown/ifup eth0/eth1).`
-` Note: if you chose re-boot, you can skip the eth0/1 configuration running ./post_clone_config_gen3.sh after re-boot to finish off the configuration`
+```
+ Selection made:  eth0 00:03:1d:12:3f:d8  eth1 00:03:1d:12:3f:d7
+ This change will become effective after system re-boot or possibly by re-starting the interfaces (ifdown/ifup eth0/eth1).
+ Note: if you chose re-boot, you can skip the eth0/1 configuration running ./post_clone_config_gen3.sh after re-boot to finish off the configuration
+```
 ` Reboot the OS now [Y|n]: `**`Y`**
 
 Make sure the MAC addresses (eg 00:03:1d:12:3f:d8) are correct - there
@@ -664,10 +716,12 @@ correct.
 
 ## Useful Commands
 
-`$ df -h                 # checks if hard drives are mounted - list of mounted disk devices with disk usage/free information`
-`$ lsblk                 # this command lists all hard disk devices in the system and where (if) they are mounted`
-`$ cgps                  # gives gps coordinates in a table if sat lock and monitors communication GPS->PC. Press [Q] to exit.`
-`$ ntpq -p               # check NTP time correction status`
-`$ watch df              # monitors df changes, good for checking data transfers`
-`$ du -hs * | grep G     # will show folders with folders >GB`
-`$ crontab -l            # shows the scheduled tasks.... good for finding commands you want to manually run now`
+```
+$ df -h                 # checks if hard drives are mounted - list of mounted disk devices with disk usage/free information
+$ lsblk                 # this command lists all hard disk devices in the system and where (if) they are mounted
+$ cgps                  # gives gps coordinates in a table if sat lock and monitors communication GPS->PC. Press [Q] to exit.
+$ ntpq -p               # check NTP time correction status
+$ watch df              # monitors df changes, good for checking data transfers
+$ du -hs * | grep G     # will show folders with folders >GB
+$ crontab -l            # shows the scheduled tasks.... good for finding commands you want to manually run now
+```

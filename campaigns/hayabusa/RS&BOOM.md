@@ -145,19 +145,23 @@ change /etc/default/gpsd
 
 to look like this:
 
-`  START_DAEMON="true"               `
-`  GPSD_OPTIONS="-b -n -G"              `
-`  DEVICES="/dev/ttyUSB0"`
-`  USBAUTO="true"                    `
-`  GPSD_SOCKET="/var/run/gpsd.sock"`
+```
+  START_DAEMON="true"               
+  GPSD_OPTIONS="-b -n -G"              
+  DEVICES="/dev/ttyUSB0"
+  USBAUTO="true"                    
+  GPSD_SOCKET="/var/run/gpsd.sock"
+```
 
 change /etc/ntp.conf
 
 only this section:
 
-`  # GPS Serial data reference                           `
-`  server 127.127.28.0 iburst minpoll 4 maxpoll 4      `
-`  fudge 127.127.28.0 time1 0.500 refid GPS            `
+```
+  # GPS Serial data reference                           
+  server 127.127.28.0 iburst minpoll 4 maxpoll 4      
+  fudge 127.127.28.0 time1 0.500 refid GPS            
+```
 
 check GPS reception: cgps
 

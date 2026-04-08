@@ -35,31 +35,37 @@ computer please refer to user manual on the manufacturer's web site
 *Note: default is Disabled (symptoms if not set - only 2 removable
 drives recognized - those attached to the add-on mini PCIe SATA card)*
 
-`Advanced -> Intel Advanced menu -> PCH-IO Configuration -> SATA Configuration`
-`Serial ATA port 1 - Hot plug - set to  [Enabled]`
-`Serial ATA port 2 - Hot plug - set to  [Enabled]`
-`Serial ATA port 3 - Hot plug - set to  [Enabled]`
-`Serial ATA port 4 - Hot plug - set to  [Enabled]`
+```
+Advanced -> Intel Advanced menu -> PCH-IO Configuration -> SATA Configuration
+Serial ATA port 1 - Hot plug - set to  [Enabled]
+Serial ATA port 2 - Hot plug - set to  [Enabled]
+Serial ATA port 3 - Hot plug - set to  [Enabled]
+Serial ATA port 4 - Hot plug - set to  [Enabled]
+```
 
 3\. Set auto wake up from S5 power down (not critical)
 
 *Note: S5 is power down. This will save the day if the JAT jumper had
 fallen off - otherwise not effective*
 
-`Advanced -> Intel Advanced menu -> ACPI settings`
-`Wake system from S5 [Enabled]`
-`Wake Up Hour  [8]`
+```
+Advanced -> Intel Advanced menu -> ACPI settings
+Wake system from S5 [Enabled]
+Wake Up Hour  [8]
+```
 
 4\. Disable unused serial ports to suppress error message during boot
 (not critical)
 
 *Note: just to suppress an error print in POST boot message)*
 
-` Advanced -> Intel Advanced menu -> Super IO Chip`
-` Serial Port 3 [Disable]`
-` Serial Port 4 [Disable]`
-` Serial Port 5 [Disable]`
-` Serial Port 6 [Disable]`
+```
+ Advanced -> Intel Advanced menu -> Super IO Chip
+ Serial Port 3 [Disable]
+ Serial Port 4 [Disable]
+ Serial Port 5 [Disable]
+ Serial Port 6 [Disable]
+```
 
 5\. Save and exit
 

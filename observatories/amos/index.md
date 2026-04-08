@@ -46,8 +46,10 @@ New design (on by default). Use a 2.2kΩ resistor.
 
 2\) System shutdown. Either:
 
-` A) connect screen and keyboard, figure out and note the folder structure on the data HDD and how/where it is attached to the filesystem, to be able to replicate that with the new drive. Shutdown the system.`
-` B) Ask the Slovak team to shut the system down.`
+```
+ A) connect screen and keyboard, figure out and note the folder structure on the data HDD and how/where it is attached to the filesystem, to be able to replicate that with the new drive. Shutdown the system.
+ B) Ask the Slovak team to shut the system down.
+```
 
 3\) Disconnect power (either by disconnecting the cable, or switching
 the output off on the MPPT.

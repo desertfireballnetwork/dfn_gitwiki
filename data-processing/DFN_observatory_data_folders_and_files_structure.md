@@ -25,10 +25,12 @@ commands)
 
 commandline example:
 
-`python /opt/dfn-software/enable_ext-hd.py`
-`mount /data1`
-`mount /data2`
-`mount /data3`
+```
+python /opt/dfn-software/enable_ext-hd.py
+mount /data1
+mount /data2
+mount /data3
+```
 *`... access data`*
 `python /opt/dfn-software/disable_ext-hd.py`
 
@@ -43,19 +45,21 @@ before the disk need to be replaced or data remotely deleted.*
 
 The data structure in /dataX folders is following:
 
-`/data1`
-`├── DFNEXT022`
-`│   ├── 2018`
-`│   │   ├── 01`
-`│   │   │   ├── 2018-01-04_DFNEXT022_1515114584`
-`│   │   │   ├── 2018-01-05_DFNEXT022_1515112201`
-`                     ...`
-`│   │   │   ├── 2018-01-30_DFNEXT022_1517353916`
-`│   │   │   └── 2018-01-31_DFNEXT022_1517440320`
-`│   │   ├── 02`
-`│   │   │   ├── 2018-02-01_DFNEXT022_1517526718`
-`│   │   │   ├── 2018-02-02_DFNEXT022_1517613118`
-`│   │   │   ├── 2018-02-03_DFNEXT022_1517699520`
+```
+/data1
+├── DFNEXT022
+│   ├── 2018
+│   │   ├── 01
+│   │   │   ├── 2018-01-04_DFNEXT022_1515114584
+│   │   │   ├── 2018-01-05_DFNEXT022_1515112201
+                     ...
+│   │   │   ├── 2018-01-30_DFNEXT022_1517353916
+│   │   │   └── 2018-01-31_DFNEXT022_1517440320
+│   │   ├── 02
+│   │   │   ├── 2018-02-01_DFNEXT022_1517526718
+│   │   │   ├── 2018-02-02_DFNEXT022_1517613118
+│   │   │   ├── 2018-02-03_DFNEXT022_1517699520
+```
 
 Under normal conditions there is one folder with images per night -
 unless there is for example power cut or some other interruption during

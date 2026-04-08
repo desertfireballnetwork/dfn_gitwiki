@@ -179,20 +179,26 @@ if listed, run command "gphoto2 --capture-image-and-download"
 
 if you get response
 
-`root@DFNEXT077:/data0/latest# gphoto2 --get-config /main/capturesettings/f-number`
-`Label: F-Number                                                                `
-`Type: RADIO`
-`Current: f/655.35`
-`Choice: 0 f/655.35`
+```
+root@DFNEXT077:/data0/latest# gphoto2 --get-config /main/capturesettings/f-number
+Label: F-Number                                                                
+Type: RADIO
+Current: f/655.35
+Choice: 0 f/655.35
+```
 
-`root@DFNEXT077:/data0/latest# gphoto2 --capture-image`
-`                                                                              `
-`*** Error ***              `
+```
+root@DFNEXT077:/data0/latest# gphoto2 --capture-image
+                                                                              
+*** Error ***              
+```
 
-`*** Error ***              `
-`Camera Mode Not Adjust FNumber`
-`ERROR: Could not capture image.`
-`ERROR: Could not capture.`
+```
+*** Error ***              
+Camera Mode Not Adjust FNumber
+ERROR: Could not capture image.
+ERROR: Could not capture.
+```
 
 that means the Aperture ring of the Samyang lens is in wrong position.
 
@@ -287,14 +293,16 @@ A very useful diagnostic command is
 which (togethher with heaps of other info) prints the usage and free
 space on the memory card:
 
-` Storage Devices Summary:`
-` store_00020001:`
-`       StorageDescription: None`
-`       VolumeLabel:  [Slot 2]`
-`       Storage Type: Removable RAM (memory card)`
-`       Filesystemtype: Digital Camera Layout (DCIM)`
-`       Access Capability: Read Only with Object deletion`
-`       Maximum Capability: 64014417920 (61048 MB)`
+```
+ Storage Devices Summary:
+ store_00020001:
+       StorageDescription: None
+       VolumeLabel:  [Slot 2]
+       Storage Type: Removable RAM (memory card)
+       Filesystemtype: Digital Camera Layout (DCIM)
+       Access Capability: Read Only with Object deletion
+       Maximum Capability: 64014417920 (61048 MB)
+```
 `       `**`Free Space (Bytes): 60096512 (57 MB)`**
 `       `**`Free Space (Images): 0`**
 
@@ -334,9 +342,11 @@ or equivalent shorted
 
 in case of memory card FS problem we get
 
-`*** Error ***              `
-`PTP Device Busy`
-`*** Error (-110: 'I/O in progress') ***       `
+```
+*** Error ***              
+PTP Device Busy
+*** Error (-110: 'I/O in progress') ***       
+```
 
 and the deleting fails.
 
@@ -344,24 +354,26 @@ Also two or more directories with images listed by
 
 `gphoto2 -L -R`
 
-`There is no file in folder '/'.                                                `
-`There is no file in folder '/store_00020001'.`
-`There is no file in folder '/store_00020001/DCIM'.`
-`There are 999 files in folder '/store_00020001/DCIM/139ND810'.`
-`#1     DSC_0042.NEF               rd 45431 KB application/x-unknown`
-`#2     DSC_0043.NEF               rd 45458 KB application/x-unknown`
-`#3     DSC_0044.NEF               rd 44759 KB application/x-unknown`
-`...`
-`#997   DSC_1038.NEF               rd 39808 KB application/x-unknown`
-`#998   DSC_1039.NEF               rd 39851 KB application/x-unknown`
-`#999   DSC_1040.NEF               rd 39710 KB application/x-unknown`
-`There is no file in folder '/store_00020001/DCIM/140ND810'.`
-`There is no file in folder '/store_00020001/DCIM/141ND810'.`
-`There are 519 files in folder '/store_00020001/DCIM/142ND810'.`
-`#1000  DSC_1041.NEF`
-`#1001  DSC_1042.NEF               rd 39875 KB application/x-unknown`
-`#1002  DSC_1043.NEF               rd 39764 KB application/x-unknown`
-`...`
+```
+There is no file in folder '/'.                                                
+There is no file in folder '/store_00020001'.
+There is no file in folder '/store_00020001/DCIM'.
+There are 999 files in folder '/store_00020001/DCIM/139ND810'.
+#1     DSC_0042.NEF               rd 45431 KB application/x-unknown
+#2     DSC_0043.NEF               rd 45458 KB application/x-unknown
+#3     DSC_0044.NEF               rd 44759 KB application/x-unknown
+...
+#997   DSC_1038.NEF               rd 39808 KB application/x-unknown
+#998   DSC_1039.NEF               rd 39851 KB application/x-unknown
+#999   DSC_1040.NEF               rd 39710 KB application/x-unknown
+There is no file in folder '/store_00020001/DCIM/140ND810'.
+There is no file in folder '/store_00020001/DCIM/141ND810'.
+There are 519 files in folder '/store_00020001/DCIM/142ND810'.
+#1000  DSC_1041.NEF
+#1001  DSC_1042.NEF               rd 39875 KB application/x-unknown
+#1002  DSC_1043.NEF               rd 39764 KB application/x-unknown
+...
+```
 
 To fix this, [format the memory
 card]({{ site.baseurl }}{% link observatories/maintenance/Formatting_the_CF_Card.md %}). If the problem repeats,

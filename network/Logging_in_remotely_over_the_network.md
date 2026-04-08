@@ -156,8 +156,10 @@ organised. It is more 'proper' to put the provided keys/certs into the
 'client' subfolder. The systemd service name is the slightly different:
 "
 
-`sudo systemctl start openvpn-client@ALIAS.service`
-`sudo systemctl enable openvpn-client@ALIAS.service`
+```
+sudo systemctl start openvpn-client@ALIAS.service
+sudo systemctl enable openvpn-client@ALIAS.service
+```
 
 </div>
 
