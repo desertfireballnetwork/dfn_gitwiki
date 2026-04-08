@@ -3,7 +3,7 @@ title: "Installing Samyang Lens and DSLR"
 parent: "Site Installations"
 ---
 see also: [removing the outer blower
-ducting]({% link observatories/maintenance/Fitting_the_outer_blower_ducting.md %})(not required for
+ducting]({{ site.baseurl }}{% link observatories/maintenance/Fitting_the_outer_blower_ducting.md %})(not required for
 new cameras)
 
 ## Tools
@@ -104,11 +104,11 @@ Attach camera shutter cable to the PCB.
 ![lens_install_shuttercable_a.jpg]({{ site.baseurl }}/images/lens_install_shuttercable_a.jpg)
 
 Now for a newly arrived camera system, [configure and
-test]({% link observatories/maintenance/Configuring_the_Software.md %}) the whole system in the lab.
+test]({{ site.baseurl }}{% link observatories/maintenance/Configuring_the_Software.md %}) the whole system in the lab.
 The more preparation you do in advance, the less stress there will be
 during the fieldwork. If you plan to transport the instrument to the
 final site, and it is not sure what the roads quality will be, we
 recommend removing the DSLR from the enclosure for transport. For the
 same reason, we ship them in the same cardboard box, but separately.
 When on the final deployment site, do not forget to [fit the outer
-blower ducting]({% link observatories/maintenance/Fitting_the_outer_blower_ducting.md %})!
+blower ducting]({{ site.baseurl }}{% link observatories/maintenance/Fitting_the_outer_blower_ducting.md %})!

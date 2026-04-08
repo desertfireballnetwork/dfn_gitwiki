@@ -9,7 +9,7 @@ replaced.
 
 During the day time, when it the DSLR is off, power it on with this
 command: `python /opt/dfn-software/enable_camera.py` or through the
-[GUI]({% link observatories/maintenance/Web_Interface.md %}) interface.
+[GUI]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) interface.
 ![D810_Card_Error.jpg]({{ site.baseurl }}/images/D810_Card_Error.jpg)
 ![D810_Need_Format.jpg]({{ site.baseurl }}/images/D810_Need_Format.jpg) In order to format the
 card, the USB cable needs to be disconnected from the DSLR. The card can

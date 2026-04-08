@@ -27,7 +27,7 @@ Create a new connection – see screenshots below. The camera host IP
 address in this example is 172.16.0.101 (local WiFi connection at the
 camera site). Use the appropriate IP address corresponding to connection
 used. (More on connecting to camera
-[here]({% link Getting_Started.md %}#connecting-to-your-fireball-observatory-for-the-first-time).)
+[here]({{ site.baseurl }}{% link Getting_Started.md %}#connecting-to-your-fireball-observatory-for-the-first-time).)
 
 More detailed instructions how to use WinSCP are in pdf format here:
 ![![WinSCP]({{ site.baseurl }}/images/WinSCP) connection to
@@ -47,6 +47,6 @@ Alternatively, you can use
 [pageant](https://winscp.net/eng/docs/ui_pageant).
 
 If you have never used ssh keys before, have a look at the [DFN wiki
-here]({% link network/SSH_Keys.md %}) and there is also a good [general information
+here]({{ site.baseurl }}{% link network/SSH_Keys.md %}) and there is also a good [general information
 on using ssh keys in
 WinSCP](https://winscp.net/eng/docs/guide_public_key) on their web site.

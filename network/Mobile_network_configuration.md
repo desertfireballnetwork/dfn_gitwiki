@@ -4,26 +4,26 @@ parent: "Network Access"
 ---
 This page describes the configuration of Mobile data network in DFN
 camera systems. Upper level page is
-[Mobile_network_-_3G,_4G]({% link network/Mobile_network_-_3G,_4G.md %}).
+[Mobile_network_-_3G,_4G]({{ site.baseurl }}{% link network/Mobile_network_-_3G,_4G.md %}).
 
 First make sure you know [which camera system you
-have]({% link observatories/index.md %}). Most of the GFO systems are DFNEXTs. We
+have]({{ site.baseurl }}{% link observatories/index.md %}). Most of the GFO systems are DFNEXTs. We
 use DFNEXTs pretty much only within the Curtin - operated DFN in Western
 and South Australia.
 
 For modem module installation in DFNEXT observatories with blue PCB
 modem adaptor board please refer to [DFNEXT Modem
-Installation]({% link observatories/dfnext/DFNEXT_Modem_Installation.md %}).
+Installation]({{ site.baseurl }}{% link observatories/dfnext/DFNEXT_Modem_Installation.md %}).
 
 For modem module installation in DFNSMALL/DFNEXT observatories with
 green PCB modem adaptor board please refer to [DFN Modem Installation -
-Green card]({% link observatories/dfnext/DFN_Modem_Installation_-_Green_card.md %}).
+Green card]({{ site.baseurl }}{% link observatories/dfnext/DFN_Modem_Installation_-_Green_card.md %}).
 
 In case of DFNSMALL camera systems with Commell LE-37D PC boards and
 modem mPCIe card in the slot on-board the PC (no USB adopter used),
 please make sure the BIOS is configured accordingly - please refer to
 [DFNSMALL observatories BIOS
-configuration]({% link observatories/dfnsmall/DFNSMALL_observatories_BIOS_configuration.md %}) how
+configuration]({{ site.baseurl }}{% link observatories/dfnsmall/DFNSMALL_observatories_BIOS_configuration.md %}) how
 to enable the WLAN card support. (For DFNEXT systems no specific BIOS
 configuration is needed.)
 
@@ -288,5 +288,5 @@ and then you open /etc/network/interfaces, comment out all the
 
 ## Checking the quality of reception - signal strength
 
-[Mobile signal strength check]({% link network/Mobile_signal_strength_check.md %})
+[Mobile signal strength check]({{ site.baseurl }}{% link network/Mobile_signal_strength_check.md %})
 in the observatory PC operating system

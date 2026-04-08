@@ -65,4 +65,4 @@ door.
 
 If there are any issues with the GUI while attempting to format HDDs or
 run the interval control test, see the [Manual
-Maintenance]({% link observatories/maintenance/Manual_Maintenance.md %}) page.
+Maintenance]({{ site.baseurl }}{% link observatories/maintenance/Manual_Maintenance.md %}) page.

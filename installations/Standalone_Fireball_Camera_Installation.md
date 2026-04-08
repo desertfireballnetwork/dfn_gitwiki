@@ -77,7 +77,7 @@ only 30 in total are required per installation.)
 - Star picket stakes to secure the stand in soft soil, or
 - Sand bags or rocks to weigh down stand in rocky terrain
 - Hardware to build the fence - if applicable (see
-  [below]({% link installations/Standalone_Fireball_Camera_Installation.md %}#fence))
+  [below]({{ site.baseurl }}{% link installations/Standalone_Fireball_Camera_Installation.md %}#fence))
 
 # Observatory deployment
 

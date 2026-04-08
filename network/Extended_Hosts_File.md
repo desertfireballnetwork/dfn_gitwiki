@@ -238,12 +238,12 @@ modify the hosts file on your local computer.
 
 <!-- -->
 
-- [Page]({% link network/IP_Addresses.md %})
+- [Page]({{ site.baseurl }}{% link network/IP_Addresses.md %})
 - [Discussion](https://dfn.d-f-n.org/mediawiki/index.php?title=Talk:IP_Addresses&action=edit&redlink=1)
 
 <!-- -->
 
-- [Read]({% link network/IP_Addresses.md %})
+- [Read]({{ site.baseurl }}{% link network/IP_Addresses.md %})
 - Edit
 - Edit source
 - View history
@@ -251,7 +251,7 @@ modify the hosts file on your local computer.
 
 ### More
 
-- [Main page]({% link index.md %})
+- [Main page]({{ site.baseurl }}{% link index.md %})
 - Recent changes
 - Random page
 - Help

@@ -40,6 +40,6 @@ it is harder to spot.
 
 \- A common fixable issue is the LC cable is disconnected from the PCB.
 This link can help to know what to look out
-for: [<https://wiki.dfn.net.au/index.php/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure#Additional_cables>]({% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %}#additional-cables)
+for: [<https://wiki.dfn.net.au/index.php/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure#Additional_cables>]({{ site.baseurl }}{% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %}#additional-cables)
 
 \- Check for damage on the cable up to where it is glued onto the lens.

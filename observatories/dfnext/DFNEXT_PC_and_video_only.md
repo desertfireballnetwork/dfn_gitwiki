@@ -15,7 +15,7 @@ Then connect:
 - finally, power straight on PC board.
 
 To focus, follow instructions
-[here]({% link observatories/maintenance/Focusing_the_video_lens.md %}).
+[here]({{ site.baseurl }}{% link observatories/maintenance/Focusing_the_video_lens.md %}).
 
 Point it East (270 deg azimuth), and about 55 degrees up.
 

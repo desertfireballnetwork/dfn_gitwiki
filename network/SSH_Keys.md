@@ -33,7 +33,7 @@ used to check that the person logging in possesses the private key.
 <https://en.wikipedia.org/wiki/Public-key_cryptography>.) These
 instructions will help you create an ssh key on Linux, Mac OS X or
 Windows using the [Microsoft Windows Linux
-Subsystem]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#logging-in-via-the-terminal-from-windows).
+Subsystem]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#logging-in-via-the-terminal-from-windows).
 
 First, check to see if you have any ssh keys already by running the
 command:
@@ -87,7 +87,7 @@ prompt you for the password and then install your public key for you.
 You need to know the username that you want to log into (probably `root`
 if you're configuring or doing maintenance on a DFN observatory), the
 user's password, and the [IP address of the
-observatory]({% link network/IP_Addresses.md %}) or computer.
+observatory]({{ site.baseurl }}{% link network/IP_Addresses.md %}) or computer.
 
 As an example, to install your key into DFNSMALL17 for the root user you
 would run one of the following commands:
@@ -95,11 +95,11 @@ would run one of the following commands:
 *Note: this direct installation of public ssh key will not work with
 user root on DFNEXT camera systems, when installing your first key and
 authenticating using system password. See [here for explanation
-why]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#difficulties-logging-in-as-the-root-user-using-a-password).
+why]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#difficulties-logging-in-as-the-root-user-using-a-password).
 One needs to log in as dfn-user, then 'su -' to become root and [install
 the public key manually](#installing-your-ssh-key-manually).*
 
-#### If connecting remotely over the [VPN]({% link network/How_VPN_works.md %}):
+#### If connecting remotely over the [VPN]({{ site.baseurl }}{% link network/How_VPN_works.md %}):
 
 `ssh-copy-id root@10.1.17.17 `
 
@@ -178,7 +178,7 @@ covertly swapped with someone else's as then they would be able to log
 in instead of you).
 
 To get access to your DFN observatory, send your public key to [DFN
-camera help]({% link Getting_Help.md %}) along with the name of the
+camera help]({{ site.baseurl }}{% link Getting_Help.md %}) along with the name of the
 observatory or observatories you would like to login to (e.g.
 `DFNEXT032`), and plug the relevant observatories into power and
 internet (use the *Network/eth1* Ethernet port). We will then install
@@ -234,7 +234,7 @@ If you're using Windows, but are not using the [Microsoft Windows
 Subsystem for
 Linux](https://learn.microsoft.com/en-us/windows/wsl/about). You will
 need to use PuTTYgen ([which come as part of PuTTY if you use the
-installer]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#putty)) to
+installer]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#putty)) to
 generate your key. To generate a key using PuTTYgen: run PuTTYgen from
 the start menu; select SSH-2 RSA down the bottom of the window; change
 the number of bits to 4096; and hit *Generate*. Or use more modern and

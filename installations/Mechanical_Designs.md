@@ -8,22 +8,22 @@ sunshields and things like that
 # Gallery of installations
 
 - [Various photos of Fireball Camera Systems
-  Installations]({% link installations/Photos_of_Fireball_Camera_Installations.md %})
+  Installations]({{ site.baseurl }}{% link installations/Photos_of_Fireball_Camera_Installations.md %})
 - [Rooftop installations of DFNEXT/DFNSMALL camera
-  systems]({% link installations/Rooftop_Fireball_Camera_Installation.md %})
+  systems]({{ site.baseurl }}{% link installations/Rooftop_Fireball_Camera_Installation.md %})
 - [Standalone Fireball Camera
-  Installation]({% link installations/Standalone_Fireball_Camera_Installation.md %})
+  Installation]({{ site.baseurl }}{% link installations/Standalone_Fireball_Camera_Installation.md %})
   (DFNEXT/DFNSMALL)
 
 # DFNEXT and DFNSMALL camera systems
 
 - [DFNEXT/DFNSMALL camera mounting
-  pattern]({% link installations/Rooftop_Fireball_Camera_Installation.md %}#mounting-pattern),
+  pattern]({{ site.baseurl }}{% link installations/Rooftop_Fireball_Camera_Installation.md %}#mounting-pattern),
   eg for roof top deployment
 - [Drawings and instructions for standalone
-  installation]({% link installations/Standalone_Fireball_Camera_Installation.md %}#parts)
+  installation]({{ site.baseurl }}{% link installations/Standalone_Fireball_Camera_Installation.md %}#parts)
 - [DFNEXT stand design by the UK Fireball
-  Network]({% link observatories/dfnext/DFNEXT_stand_design_by_the_UK_Fireball_Network.md %}),
+  Network]({{ site.baseurl }}{% link observatories/dfnext/DFNEXT_stand_design_by_the_UK_Fireball_Network.md %}),
   off-the-shelf installation guide for standalone or rooftop deployment.
 
 # DFNKIT camera systems
@@ -31,7 +31,7 @@ sunshields and things like that
 ##  Rooftop Mounts
 
 - [Rooftop Kit Camera
-  Installation]({% link installations/Rooftop_Kit_Camera_Installation.md %}) details -
+  Installation]({{ site.baseurl }}{% link installations/Rooftop_Kit_Camera_Installation.md %}) details -
   DFNKIT deployment
 
 (For ![DFNKIT]({{ site.baseurl }}/images/Kit_camera_with_GPS_antenna_1000.jpg)

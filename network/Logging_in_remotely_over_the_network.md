@@ -8,7 +8,7 @@ In order to log in remotely over the network you need to use our
 # Re-configuring VPN in camera systems - 2023 change
 
 Please refer to this wiki page: [Reconfigure
-VPN]({% link network/Reconfigure_VPN.md %}).
+VPN]({{ site.baseurl }}{% link network/Reconfigure_VPN.md %}).
 
 # Setting up VPN configuration in your laptop/desktop
 
@@ -17,7 +17,7 @@ VPN]({% link network/Reconfigure_VPN.md %}).
 <div>
 
 If you do not have much experience with virtual private networks,
-[here]({% link network/How_VPN_works.md %}) you can find very brief and condensed
+[here]({{ site.baseurl }}{% link network/How_VPN_works.md %}) you can find very brief and condensed
 information how VPNs work and why you eg do not need to have a public
 fixed IP to connect to an observatory remotely.
 
@@ -28,7 +28,7 @@ fixed IP to connect to an observatory remotely.
 <div>
 
 In order to use the VPN you will need to request a VPN certificate from
-us. Contact [DFN camera help]({% link Getting_Help.md %}) and we will
+us. Contact [DFN camera help]({{ site.baseurl }}{% link Getting_Help.md %}) and we will
 provide you with one. Please tell us what platform you will be using
 (Linux, Mac OS X, Windows, Android) as sometimes we need to modify the
 configuration depending on your platform (Windows required four IP
@@ -189,7 +189,7 @@ OpenVPN client.
 
 Install Tunnelblick from [here](https://tunnelblick.net/downloads.html)
 and then configure it using the .opvpn file provided by [DFN camera
-help]({% link Getting_Help.md %}) by following the instructions
+help]({{ site.baseurl }}{% link Getting_Help.md %}) by following the instructions
 [here](https://tunnelblick.net/cConfigT.html#creating-and-installing-a-tunnelblick-vpn-configuration)
 (*Creating and Installing a Tunnelblick VPN Configuration* section).
 
@@ -206,7 +206,7 @@ help]({% link Getting_Help.md %}) by following the instructions
 - Wait a few seconds; the window will disappear, and the icon will turn
   mostly green once you're connected
 - You can now connect to any camera using its VPN [IP
-  address]({% link network/IP_Addresses.md %}).
+  address]({{ site.baseurl }}{% link network/IP_Addresses.md %}).
 
 ### Android
 
@@ -237,23 +237,23 @@ Once you have the certificate installed on your computer and you have
 connected to the VPN you will be able to connect to the camera as if you
 had a local Ethernet or WiFi connection (although the response time to
 commands will be a bit longer). The only difference is that you will
-need to use the [VPN IP address]({% link network/IP_Addresses.md %}) of the camera
+need to use the [VPN IP address]({{ site.baseurl }}{% link network/IP_Addresses.md %}) of the camera
 instead of the local login IP address.
 
 If you are on Linux or Mac OS X open a terminal and log into your
 observatory using SSH. For example, if you have [set up your hosts file
-for convenience]({% link network/Hosts_File.md %}) you would into DFNEXT17 by
+for convenience]({{ site.baseurl }}{% link network/Hosts_File.md %}) you would into DFNEXT17 by
 running the command:
 
 `ssh root@DFNEXT17`
 
-If you have not set up your local [hosts file]({% link network/Hosts_File.md %}),
+If you have not set up your local [hosts file]({{ site.baseurl }}{% link network/Hosts_File.md %}),
 you would run the command:
 
 `ssh root@10.1.23.17`
 
 You will then be prompted to [unlock your SSH key to log
-in]({% link network/SSH_Keys.md %}) or enter the root user password if you aren't
+in]({{ site.baseurl }}{% link network/SSH_Keys.md %}) or enter the root user password if you aren't
 using an SSH key.
 
 ## Logging In via the Terminal from Windows
@@ -261,19 +261,19 @@ using an SSH key.
 If you're on Windows, you will need to use PuTTY or Microsoft Windows
 Subsystem for Linux; for more information see: [Logging in via Terminal
 from
-Windows]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#logging-in-via-the-terminal-from-windows).
+Windows]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#logging-in-via-the-terminal-from-windows).
 You will need to use the relevant [VPN IP
-address]({% link network/IP_Addresses.md %}) instead of the local addresses though.
+address]({{ site.baseurl }}{% link network/IP_Addresses.md %}) instead of the local addresses though.
 
 # Logging in via the Web Interface
 
-If you have [set up your hosts file]({% link network/Hosts_File.md %}), you can now
+If you have [set up your hosts file]({{ site.baseurl }}{% link network/Hosts_File.md %}), you can now
 log in via the web interface by entering it in your browser's address
 bar with the web interface's port number (8080). For example, to log
 into DFNEXT12 you would enter `DFNEXT:8080`.
 
 If you haven't [set up your hosts file for
-convenience]({% link network/Hosts_File.md %}) then you will need to look up your
-observatories [VPN IP address]({% link network/IP_Addresses.md %}) and enter that
+convenience]({{ site.baseurl }}{% link network/Hosts_File.md %}) then you will need to look up your
+observatories [VPN IP address]({{ site.baseurl }}{% link network/IP_Addresses.md %}) and enter that
 instead. For example, to log into DFNEXT12 you would enter
 `10.1.23.12:8080`.

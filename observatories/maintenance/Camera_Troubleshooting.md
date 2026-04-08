@@ -21,7 +21,7 @@ to happen:
 - DSLR has to take photos - [how to
   fix](#possible-cause-fix-when-dslr-is-not-taking-photos)
 - LC shutter has to flicker - [investigate LC shutter
-  malfunction]({% link observatories/maintenance/Investigate_LC_shutter_malfunction.md %})
+  malfunction]({{ site.baseurl }}{% link observatories/maintenance/Investigate_LC_shutter_malfunction.md %})
 
 ## Initial Steps
 
@@ -83,8 +83,8 @@ a reset in a web interface over WiFi.
 #### Software reboot
 
 Connect to the WiFi network and then open the [Web GUI
-interface]({% link observatories/maintenance/Web_Interface.md %}) and [reboot the
-system]({% link observatories/maintenance/Using_the_GUI_for_Regular_Maintenance.md %}#rebooting-the-system).
+interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) and [reboot the
+system]({{ site.baseurl }}{% link observatories/maintenance/Using_the_GUI_for_Regular_Maintenance.md %}#rebooting-the-system).
 
 #### Hard reset - cycling the power
 
@@ -104,11 +104,11 @@ silent.
 
 1.  Power on the observatory box and try to locally connect with
     [ethernet
-    cable]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#ethernet)
-    or [WiFi]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#wifi)
+    cable]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#ethernet)
+    or [WiFi]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#wifi)
     (if the box is is equipped with it, eg DFNEXT type)
     - for wired connection, make sure you using [the correct ethernet
-      port]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#ethernet)
+      port]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}#ethernet)
       for laptop connection. (Better try both if unsure.)
     - make sure the WiFi antenna is attached if you want to use WiFi -
       the white little stick on the bottom of the DFNEXT box.
@@ -364,7 +364,7 @@ Also two or more directories with images listed by
 `...`
 
 To fix this, [format the memory
-card]({% link observatories/maintenance/Formatting_the_CF_Card.md %}). If the problem repeats,
+card]({{ site.baseurl }}{% link observatories/maintenance/Formatting_the_CF_Card.md %}). If the problem repeats,
 replace the memory card and/or make sure the USB3 cable between the DSLR
 and PC is in a good shape and not causing errors (syslog inspection
 should reveal that if physical cable does not look damaged or sharp

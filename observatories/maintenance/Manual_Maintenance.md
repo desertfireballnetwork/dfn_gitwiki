@@ -7,12 +7,12 @@ grand_parent: "Observatories"
 
 If you are ever required to perform any manual maintenance, first
 [connect to your
-camera]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}).
+camera]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}).
 
 If you are unable to connect to the camera system [locally via the
 network (ethernet or
-WiFi)]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}), or [remotely
-over the VPN]({% link network/Logging_in_remotely_over_the_network.md %}), you can
+WiFi)]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}), or [remotely
+over the VPN]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}), you can
 log in locally using a HDMI or VGA monitor and USB keyboard.
 
 ### Direct Connection
@@ -319,7 +319,7 @@ To check if there are images on the camera CF card:
 `$ gphoto2 -L -R    # this will list all files on camera`
 
 To format the CF card, see the dedicated instruction [page
-here]({% link observatories/maintenance/Formatting_the_CF_Card.md %}).
+here]({{ site.baseurl }}{% link observatories/maintenance/Formatting_the_CF_Card.md %}).
 
 ## Capture control test
 
@@ -412,7 +412,7 @@ the bottom of the page, the GPS communicates with the observatory PC.*
 Second thing to check is that the capture control SW hets the leocation
 and time when it runs with GPS antenna connected and with good signal
 reception. Inspect the \*interval.txt logs, either produced by [capture
-control test]({% link observatories/maintenance/Configuring_the_Software.md %}#capture-control-test)
+control test]({{ site.baseurl }}{% link observatories/maintenance/Configuring_the_Software.md %}#capture-control-test)
 or by regular overnight operation. In case of nominal GPS functionality,
 the ntp NMEA/PPS time correction should be active:
 
@@ -540,7 +540,7 @@ location.*
 If using brand new unconfigured PC board or if the CMOS battery on the
 new PC board is replaced or if in case of unexpected camera system
 behaviour, make sure the [BIOS and HW jumpers
-configuration]({% link observatories/dfnsmall/DFNSMALL_observatories_BIOS_configuration.md %}) is
+configuration]({{ site.baseurl }}{% link observatories/dfnsmall/DFNSMALL_observatories_BIOS_configuration.md %}) is
 correct.
 
 ### Commell LE-37G (DFNEXT)
@@ -557,7 +557,7 @@ correct.
     (use snal off knife to cu the silicone glue, then clean out the
     residual silicone); remove the DSLR and lens from the box ([reverse
     order of these
-    steps]({% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})).
+    steps]({{ site.baseurl }}{% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})).
 3.  Optional, but recommended: Take a few photos of what connectors are
     plugged where.
 4.  Remove the connectors from the DFNEXT camera custom electronics PCB.
@@ -600,11 +600,11 @@ correct.
     not have to be bolted to the box for this test).
 17. It is recommended to test the box as much as possible. Please refer
     to
-    [checklists]({% link observatories/maintenance/index.md %}#servicing-and-deployment-checklists),
+    [checklists]({{ site.baseurl }}{% link observatories/maintenance/index.md %}#servicing-and-deployment-checklists),
     particularly the one for the lab. There are some useful details in
     the others too.
 18. Install the DSLR and lens ([follow these
-    steps]({% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})).
+    steps]({{ site.baseurl }}{% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})).
     Glue in the outer blower ducting using UV resistant silicone
     adhesive ("roof and gutters" grade).
 
@@ -659,7 +659,7 @@ stay persistent as long as the PC is not changed again.
 If using brand new unconfigured PC board or if the CMOS battery on the
 new PC board is replaced or if in case of unexpected camera system
 behaviour, make sure the [BIOS and HW jumpers
-configuration]({% link observatories/dfnext/DFNEXT_onservatories_BIOS_configuration.md %}) is
+configuration]({{ site.baseurl }}{% link observatories/dfnext/DFNEXT_onservatories_BIOS_configuration.md %}) is
 correct.
 
 ## Useful Commands

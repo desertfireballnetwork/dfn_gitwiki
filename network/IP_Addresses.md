@@ -4,14 +4,14 @@ parent: "Network Access"
 ---
 An [IP address](https://en.wikipedia.org/wiki/IP_address) is the address of your
 observatory on the DFN's network of computers and observatories. The
-[VPN]({% link network/Logging_in_remotely_over_the_network.md %}) is used to
+[VPN]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}) is used to
 connect all these computers and observatories even when they are behind
 routers or on connections that do not provide a public IP address (like
 mobile broadband connections).
 
 The IP address of your observatory depends on it's number and what model
 of observatory it is (see [Observatory
-Types]({% link observatories/index.md %})).
+Types]({{ site.baseurl }}{% link observatories/index.md %})).
 
 DFNSMALL: `10.1.17.xx` (where xx is the observatory number)
 
@@ -23,7 +23,7 @@ FIREOPAL: `10.1.25.xxx` (where xxx is the observatory number)
 
 It is important to note that these IP addresses will only work if you
 are connected to the
-[VPN]({% link network/Logging_in_remotely_over_the_network.md %}).
+[VPN]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}).
 
 # Local IP Address
 

@@ -22,22 +22,22 @@ rocks!**
 Documentation to help you get your observatory up and running
 
 - [Re-configuring VPN in camera systems - 2023
-  change]({% link network/Reconfigure_VPN.md %})
-- [Contents of the box with DFNEXT system]({% link observatories/dfnext/Packing.md %})
-- [Getting Started]({% link Getting_Started.md %})
-- [Maintenance]({% link observatories/maintenance/index.md %})
-- [Troubleshooting]({% link observatories/maintenance/Camera_Troubleshooting.md %})
-- [Getting Help]({% link Getting_Help.md %})
-- Frequently asked questions ([FAQ]({% link FAQ.md %}))
+  change]({{ site.baseurl }}{% link network/Reconfigure_VPN.md %})
+- [Contents of the box with DFNEXT system]({{ site.baseurl }}{% link observatories/dfnext/Packing.md %})
+- [Getting Started]({{ site.baseurl }}{% link Getting_Started.md %})
+- [Maintenance]({{ site.baseurl }}{% link observatories/maintenance/index.md %})
+- [Troubleshooting]({{ site.baseurl }}{% link observatories/maintenance/Camera_Troubleshooting.md %})
+- [Getting Help]({{ site.baseurl }}{% link Getting_Help.md %})
+- Frequently asked questions ([FAQ]({{ site.baseurl }}{% link FAQ.md %}))
 
 # Fireball Data
 
 How to access your fireball images and information about how the DFN
 processes fireball ev
 
-- [Accessing data]({% link data-processing/Accessing_data.md %}) captured by Fireball
+- [Accessing data]({{ site.baseurl }}{% link data-processing/Accessing_data.md %}) captured by Fireball
   Observatory (still images, videos, logs)
-- [Finding Fireballs]({% link data-processing/Finding_Fireballs.md %}) in images
+- [Finding Fireballs]({{ site.baseurl }}{% link data-processing/Finding_Fireballs.md %}) in images
 - Data Processing Pipeline
 
 # Meteorite searching
@@ -54,15 +54,15 @@ section are especially appreciated**
 
 Todo: find a better name for this section
 
-- [Mechanical Designs]({% link installations/Mechanical_Designs.md %}) for deploying your
+- [Mechanical Designs]({{ site.baseurl }}{% link installations/Mechanical_Designs.md %}) for deploying your
   fireball observatory (add your stand and roof mount designs here)
-- [Cables]({% link observatories/maintenance/Cables.md %}) used in fireball observatories and for
+- [Cables]({{ site.baseurl }}{% link observatories/maintenance/Cables.md %}) used in fireball observatories and for
   deployment
-- [Photos of Fireballs]({% link data-processing/Fireball_Photos.md %}) (add your pretty
+- [Photos of Fireballs]({{ site.baseurl }}{% link data-processing/Fireball_Photos.md %}) (add your pretty
   fireball to the galleries here at reduced resolutions for everyone to
   see; remember this wiki is open to the public)
 - [Photos of Fireball Camera
-  Installations]({% link installations/Photos_of_Fireball_Camera_Installations.md %})
+  Installations]({{ site.baseurl }}{% link installations/Photos_of_Fireball_Camera_Installations.md %})
   (upload photos of your finished and in-progress installations here)
 
-# [Hayabusa]({% link campaigns/hayabusa/index.md %})
+# [Hayabusa]({{ site.baseurl }}{% link campaigns/hayabusa/index.md %})

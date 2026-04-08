@@ -59,7 +59,7 @@ conductors to the green numbering in the two images below.
 
 If you need to build your own long cable with (using the cable listed
 above) you can request a *Long DC Cable Run Connector Care Package* from
-[us]({% link Getting_Help.md %}). It should contain:
+[us]({{ site.baseurl }}{% link Getting_Help.md %}). It should contain:
 ![Long_DC_cable_connector_care_package.png]({{ site.baseurl }}/images/Long_DC_cable_connector_care_package.png)
 
 <table>

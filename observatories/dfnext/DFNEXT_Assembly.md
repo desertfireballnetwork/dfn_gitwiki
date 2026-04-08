@@ -5,7 +5,7 @@ grand_parent: "Observatories"
 ---
 ## Prerequisites
 
-1.  [DFNEXT_Cable_Assembly]({% link observatories/dfnext/DFNEXT_Cable_Assembly.md %})
+1.  [DFNEXT_Cable_Assembly]({{ site.baseurl }}{% link observatories/dfnext/DFNEXT_Cable_Assembly.md %})
 
 ## Enclosure Assembly
 

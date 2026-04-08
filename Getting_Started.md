@@ -9,13 +9,13 @@ controlled through the [Linux
 terminal](https://www.digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal)
 either locally or remotely from anywhere in the world. Much of the
 observatories' functionality is also accessible through a graphical [web
-interface]({% link observatories/maintenance/Web_Interface.md %}) which can also be used locally or
+interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) which can also be used locally or
 remotely.
 
 There is more than one type of DFN observatory; you can figure out what
-type you have [here]({% link observatories/index.md %}). Most of the
+type you have [here]({{ site.baseurl }}{% link observatories/index.md %}). Most of the
 instructions on this wiki will focus primarily on the latest
-[DFNEXT]({% link observatories/dfnext/index.md %}) observatories as more of these have been
+[DFNEXT]({{ site.baseurl }}{% link observatories/dfnext/index.md %}) observatories as more of these have been
 delivered to collaborators than the other types and this is the only
 fireball observatory design still in production.
 
@@ -26,14 +26,14 @@ de-focussed in transport, the DSLR body and Samyang lens are since
 August 2018 shipped separately to the main box. That completely
 eliminates the mechanical stress transferred from the packaging to the
 DSLR/lens joint. On the other hand, that means the user will need to
-install them in the [DFNEXT]({% link observatories/index.md %}) box upon
+install them in the [DFNEXT]({{ site.baseurl }}{% link observatories/index.md %}) box upon
 arrival.
 
 Please follow
-[these]({% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})
+[these]({{ site.baseurl }}{% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})
 instructions: [How to install flanged Samyang lens and DSLR to the
 DFNEXT
-enclosure]({% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})
+enclosure]({{ site.baseurl }}{% link installations/How_to_install_flanged_Samyang_lens_and_DSLR_to_the_DFNEXT_enclosure.md %})
 
 # Connecting Fireball Observatory to the Internet
 
@@ -83,15 +83,15 @@ There are three ways to connect to the observatory depending on your
 situation. These are:
 
 - [locally via the network (ethernet or
-  WiFi)]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %})
+  WiFi)]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %})
   (**recommended initially**)
 - [locally using a HDMI or VGA monitor and USB
-  keyboard]({% link observatories/maintenance/Manual_Maintenance.md %}#direct-connection)
+  keyboard]({{ site.baseurl }}{% link observatories/maintenance/Manual_Maintenance.md %}#direct-connection)
 - [remotely over the
-  VPN]({% link network/Logging_in_remotely_over_the_network.md %})
+  VPN]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %})
 
 You have the choice of either using the terminal or the graphical [web
-interface]({% link observatories/maintenance/Web_Interface.md %}) for all three of the above
+interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) for all three of the above
 connection scenarios. (Although logging in locally using a monitor and
 keyboard is not recommended if you want to use the web interface.)
 
@@ -121,7 +121,7 @@ some of the advantages are that:
 DFN observatories can be fully controlled through the terminal; however,
 most functionality (including all common operations) is also now
 available through the [graphical web
-interface]({% link observatories/maintenance/Web_Interface.md %}). This interface is useful for users
+interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}). This interface is useful for users
 who prefer graphical interfaces, users on mobile devices and for quickly
 accomplishing small tasks such as turning the drives on and off.
 
@@ -130,17 +130,17 @@ accomplishing small tasks such as turning the drives on and off.
 There are a few things you might want to set up on your local machine to
 make your life easier:
 
-- [Setting up an SSH key]({% link network/SSH_Keys.md %}) for the terminal
+- [Setting up an SSH key]({{ site.baseurl }}{% link network/SSH_Keys.md %}) for the terminal
   connection
-- [Editing your hosts file]({% link network/Hosts_File.md %})
+- [Editing your hosts file]({{ site.baseurl }}{% link network/Hosts_File.md %})
 
 We currently have three different fireball observatory designs; see
-[Which camera]({% link observatories/index.md %}) do I have?
+[Which camera]({{ site.baseurl }}{% link observatories/index.md %}) do I have?
 
 In order to check that the camera survived the transport and before
 deploying, we recommend to do a few basic configurations, then you can
 run a couple of tests (see [Configuring the
-Software]({% link observatories/maintenance/Configuring_the_Software.md %}))
+Software]({{ site.baseurl }}{% link observatories/maintenance/Configuring_the_Software.md %}))
 
 # Selecting an Appropriate Site for Deployment
 
@@ -187,9 +187,9 @@ ensure maximum science returns from the cameras:
   whole horizon is preferred. This means avoiding areas in valleys, near
   man-made structures, or with an abundance of trees.
 - **Roof versus ground setup**: a [roof
-  setup]({% link installations/Rooftop_Fireball_Camera_Installation.md %}) seems easy and
+  setup]({{ site.baseurl }}{% link installations/Rooftop_Fireball_Camera_Installation.md %}) seems easy and
   convenient, but can actually take more time to set up than a [ground
-  setup]({% link installations/Standalone_Fireball_Camera_Installation.md %}) and
+  setup]({{ site.baseurl }}{% link installations/Standalone_Fireball_Camera_Installation.md %}) and
   sometime be an issue regarding health and safety (working on the roof)
   and reliability of mains power at some sites.
 
@@ -200,23 +200,23 @@ ensure maximum science returns from the cameras:
 Fireball observatories need to be securely mounted; movement will
 degrade data quality. They also require reliable power and internet
 connections. This is recommended [minimal
-toolkit]({% link observatories/maintenance/Camera_Maintenance_Toolkit.md %}). This is a
-[comprehensive servicing]({% link observatories/maintenance/Camera_servicing_kit.md %}) kit we use on
+toolkit]({{ site.baseurl }}{% link observatories/maintenance/Camera_Maintenance_Toolkit.md %}). This is a
+[comprehensive servicing]({{ site.baseurl }}{% link observatories/maintenance/Camera_servicing_kit.md %}) kit we use on
 field trips in Australia.
 
 [Servicing and deployment
-checklists]({% link observatories/maintenance/index.md %}#servicing-and-deployment-checklists) -
+checklists]({{ site.baseurl }}{% link observatories/maintenance/index.md %}#servicing-and-deployment-checklists) -
 printable PDF sheets to go through on the remote site
 
 [Rooftop Fireball Camera
-Installation]({% link installations/Rooftop_Fireball_Camera_Installation.md %}) (valid
+Installation]({{ site.baseurl }}{% link installations/Rooftop_Fireball_Camera_Installation.md %}) (valid
 for DFNSMALL and DFNEXT)
 
 [Standalone Fireball Camera
-Installation]({% link installations/Standalone_Fireball_Camera_Installation.md %})
+Installation]({{ site.baseurl }}{% link installations/Standalone_Fireball_Camera_Installation.md %})
 
 [Rooftop Kit Camera
-Installation]({% link installations/Rooftop_Kit_Camera_Installation.md %}) (if your
+Installation]({{ site.baseurl }}{% link installations/Rooftop_Kit_Camera_Installation.md %}) (if your
 fireball camera has a clear top and only one lens - DFNKIT)
 
 Make your own DFNEXT/DFNSMALL DC power cable using these instructions
@@ -226,22 +226,22 @@ AC/DC power supply is used.
 
 #### Software Configuration
 
-[Configuring the Software]({% link observatories/maintenance/Configuring_the_Software.md %})
+[Configuring the Software]({{ site.baseurl }}{% link observatories/maintenance/Configuring_the_Software.md %})
 
 [Calibrating the camera
-orientation]({% link observatories/maintenance/Calibrating_the_camera_orientation.md %})
+orientation]({{ site.baseurl }}{% link observatories/maintenance/Calibrating_the_camera_orientation.md %})
 
-[Creating a Mask]({% link data-processing/Creating_a_Mask.md %}) to remove non-sky regions
+[Creating a Mask]({{ site.baseurl }}{% link data-processing/Creating_a_Mask.md %}) to remove non-sky regions
 of the image
 
 #### Internet access
 
 [Finding network interface MAC
-address]({% link network/Finding_network_interface_MAC_address.md %})
+address]({{ site.baseurl }}{% link network/Finding_network_interface_MAC_address.md %})
 
-[Mobile network - 3G, 4G]({% link network/Mobile_network_-_3G,_4G.md %})
+[Mobile network - 3G, 4G]({{ site.baseurl }}{% link network/Mobile_network_-_3G,_4G.md %})
 
-[WiFi configuration]({% link network/WiFi_configuration.md %})
+[WiFi configuration]({{ site.baseurl }}{% link network/WiFi_configuration.md %})
 
 # Checking Images
 

@@ -4,7 +4,7 @@ parent: "Network Access"
 ---
 This is the recommended way to log into your camera initially as it is
 very similar to the [remote log
-in]({% link network/Logging_in_remotely_over_the_network.md %}) method that you
+in]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}) method that you
 will use later once your camera is installed. If you have trouble
 logging in via Ethernet or WiFi, it is also possible to log in using an
 HDMI or VGA monitor and a USB keyboard.
@@ -34,7 +34,7 @@ the default WiFi password.
 
 *Note: It is possible to find out and change the password in a
 configuration file, please refer to [WiFi
-configuration]({% link network/WiFi_configuration.md %}).*
+configuration]({{ site.baseurl }}{% link network/WiFi_configuration.md %}).*
 
 One important thing to note is that, if the observatory is connected to
 the internet via an existing local WiFi network it will be in client
@@ -43,7 +43,7 @@ to. In this case you will need to connect to the same WiFi network that
 the camera is using. The process of finding the IP address to log into
 in this case is slightly different and depends on how the local WiFi
 network is configured; it might be simpler to [log in via the
-VPN]({% link network/Logging_in_remotely_over_the_network.md %}).
+VPN]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}).
 
 ## Logging In via the Terminal
 
@@ -75,21 +75,21 @@ opening a terminal and running the command:
 `ssh root@172.16.0.101`
 
 The camera will then prompt you for it's root password or you will
-automatically logged in via your [ssh key]({% link network/SSH_Keys.md %}). (SSH
+automatically logged in via your [ssh key]({{ site.baseurl }}{% link network/SSH_Keys.md %}). (SSH
 keys are a more secure, faster and more convenient alternative to
 passwords for logging into computers over the network).
 
 #### Difficulties logging in as the root user using a password
 
 For security reasons, password based authentication is disabled for the
-root user by default in the latest ([DFNEXT]({% link observatories/dfnext/index.md %}))
+root user by default in the latest ([DFNEXT]({{ site.baseurl }}{% link observatories/dfnext/index.md %}))
 observatories. If you want to log in using passwords, you will need to
 log in to the `dfn-user` user and then change to the root user using the
 command:
 
 `su -`
 
-We suggest [installing your ssh key]({% link network/SSH_Keys.md %}) so that this
+We suggest [installing your ssh key]({{ site.baseurl }}{% link network/SSH_Keys.md %}) so that this
 is not required every time you log in.
 
 ## Logging in via the Terminal from Windows
@@ -129,10 +129,10 @@ page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 Once installed, run PuTTY from the start menu, enter the IP address of
 the camera in the configuration screen and hit "Open".
 
-# Logging in via the [Web Interface]({% link observatories/maintenance/Web_Interface.md %})
+# Logging in via the [Web Interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %})
 
 Instead of using the text based terminal you can also use the [graphical
-web interface]({% link observatories/maintenance/Web_Interface.md %}) to control most functionality
+web interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) to control most functionality
 of the camera. It is especially useful when using a mobile device.
 
 To log into the web interface launch a web browser on your local
@@ -140,10 +140,10 @@ computer or mobile device and enter the IP address of the camera as well
 as the web interface port (`8080`).
 
 Please find more details on the [graphical web
-interface]({% link observatories/maintenance/Web_Interface.md %}) connection and usage
-[here]({% link observatories/maintenance/Web_Interface.md %}).
+interface]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}) connection and usage
+[here]({{ site.baseurl }}{% link observatories/maintenance/Web_Interface.md %}).
 
 ## Troubleshooting
 
 Please refer to the [troubleshooting
-page]({% link observatories/maintenance/Camera_Troubleshooting.md %}#how-to-troubleshoot-pc-booting).
+page]({{ site.baseurl }}{% link observatories/maintenance/Camera_Troubleshooting.md %}#how-to-troubleshoot-pc-booting).

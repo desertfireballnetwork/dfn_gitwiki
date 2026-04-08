@@ -53,16 +53,16 @@ Venue: Macquarie University, Building E7A, Level 8
 1.  Three ways to log in:
     1.  Locally via monitor and keyboard
     2.  Locally over the network (Ethernet or WiFi)
-        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_locally_via_WiFi_or_Ethernet>]({% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}))
+        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_locally_via_WiFi_or_Ethernet>]({{ site.baseurl }}{% link network/Logging_in_locally_via_WiFi_or_Ethernet.md %}))
     3.  Remotely over the network (VPN)
-        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_remotely_over_the_network>]({% link network/Logging_in_remotely_over_the_network.md %}))
+        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_remotely_over_the_network>]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}))
 2.  Ways to make working with the observatories easier
     1.  SSH Keys
-        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=SSH_Keys>]({% link network/SSH_Keys.md %}))
+        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=SSH_Keys>]({{ site.baseurl }}{% link network/SSH_Keys.md %}))
     2.  VPN access
-        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_remotely_over_the_network>]({% link network/Logging_in_remotely_over_the_network.md %}))
+        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=Logging_in_remotely_over_the_network>]({{ site.baseurl }}{% link network/Logging_in_remotely_over_the_network.md %}))
     3.  Hosts file
-        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=IP_Addresses#Hosts_File>]({% link network/IP_Addresses.md %}#hosts-file))
+        ([<https://dfn.d-f-n.org/mediawiki/index.php?title=IP_Addresses#Hosts_File>]({{ site.baseurl }}{% link network/IP_Addresses.md %}#hosts-file))
     4.  Web GUI
         (https://dfn.d-f-n.org//mediawiki/index.php?title=Web_Interface)
 3.  File access
@@ -73,8 +73,8 @@ Venue: Macquarie University, Building E7A, Level 8
 
 1.  DFN wiki: <https://dfn.d-f-n.org/mediawiki>
 2.  For camera help you can email dfn camera help ([Getting
-    Help]({% link Getting_Help.md %}))
+    Help]({{ site.baseurl }}{% link Getting_Help.md %}))
 3.  For fireball event help you can dfn events ([Getting
-    Help]({% link Getting_Help.md %}))
+    Help]({{ site.baseurl }}{% link Getting_Help.md %}))
 
 __NOTOC__

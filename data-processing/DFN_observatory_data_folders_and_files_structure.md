@@ -19,7 +19,7 @@ the data except last night from the /data0 buffer to the removable
 
 For DFNSMALLs and DFNEXTs, one needs to power up and mount the removable
 drives, eg [using web
-GUI]({% link observatories/maintenance/Using_the_GUI_for_Regular_Maintenance.md %}#accessing-data-from-earlier-observations)
+GUI]({{ site.baseurl }}{% link observatories/maintenance/Using_the_GUI_for_Regular_Maintenance.md %}#accessing-data-from-earlier-observations)
 or commandline (ssh terminal, eg Putty in Windows, log in and copy these
 commands)
 

@@ -69,18 +69,18 @@ be done also using web GUI
 
 ## Access to level 2 data via Pawsey buckets
 
-[L2 bucket data access]({% link data-processing/L2_bucket_data_access.md %})
+[L2 bucket data access]({{ site.baseurl }}{% link data-processing/L2_bucket_data_access.md %})
 
 ## Other related howtos
 
 [DFN observatory data folders and files
-structure]({% link data-processing/DFN_observatory_data_folders_and_files_structure.md %})
+structure]({{ site.baseurl }}{% link data-processing/DFN_observatory_data_folders_and_files_structure.md %})
 
-[Downloading Images]({% link data-processing/Downloading_Fireball_Images.md %}) from your
+[Downloading Images]({{ site.baseurl }}{% link data-processing/Downloading_Fireball_Images.md %}) from your
 observatory (transferring files from the camera system to a laptop or
 PC).
 
-[Dealing with RAW images]({% link data-processing/Dealing_with_RAW_images.md %}) (e.g. NEF)
+[Dealing with RAW images]({{ site.baseurl }}{% link data-processing/Dealing_with_RAW_images.md %}) (e.g. NEF)
 
 ## Automated collection of data files from removable drives /data1../data3
 

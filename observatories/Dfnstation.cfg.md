@@ -57,7 +57,7 @@ of email addesses, comma separated, no spaces.
 `owner_emails = 0`
 
 The other vital step is to set up the [camera calibration
-orientation]({% link observatories/maintenance/Calibrating_the_camera_orientation.md %}).
+orientation]({{ site.baseurl }}{% link observatories/maintenance/Calibrating_the_camera_orientation.md %}).
 
 ## Other optional settings
 
