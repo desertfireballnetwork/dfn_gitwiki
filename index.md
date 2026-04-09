@@ -4,18 +4,13 @@ nav_order: 1
 ---
 Welcome to the [Desert Fireball
 Network's](https://en.wikipedia.org/wiki/Desert_Fireball_Network) and Global
-Fireball Observatory public wiki. This wiki contains documentation for
-the the DFN's fireball observatories and data processing procedures for
-collaborators and team members. The main GFO website is on
-<https://gfo.rocks>, Australian DFN website can be found at
-<https://dfn.gfo.rocks>.
+Fireball Observatory public wiki.
+This wiki contains documentation for
+the the DFN's fireball observatories and data processing procedures for collaborators and team members. The main GFO website is on <https://gfo.rocks>, Australian DFN website can be found at <https://dfn.gfo.rocks>.
 
-**Please contribute where you can** by uploading information, designs
-and files that will help others with installation, maintenance and
-operation. By documenting your problems and solutions here, you can help
-other collaborators get up and running faster. **We need your help to
-get cameras off shelves and under the night sky looking for space
-rocks!**
+
+**Note: ** All the content on this website was converted from the old Mediawiki. If you notice any problem or things missing, please [raise an issue]({{site.gh_edit_repository}}/issues).
+
 
 # Fireball Observatories
 
@@ -32,13 +27,11 @@ Documentation to help you get your observatory up and running
 
 # Fireball Data
 
-How to access your fireball images and information about how the DFN
-processes fireball ev
+How to access your fireball images and information about how the DFN processes fireball events
 
 - [Accessing data]({{ site.baseurl }}{% link data-processing/Accessing_data.md %}) captured by Fireball
   Observatory (still images, videos, logs)
 - [Finding Fireballs]({{ site.baseurl }}{% link data-processing/Finding_Fireballs.md %}) in images
-- Data Processing Pipeline
 
 # Meteorite searching
 
