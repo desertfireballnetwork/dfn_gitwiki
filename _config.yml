@@ -7,7 +7,11 @@ plugins:
   - jekyll-remote-theme
 
 url: "https://desertfireballnetwork.github.io"
-baseurl: "/dfn_gitwiki"
+### github pages default - relative URL
+  # baseurl: "/dfn_gitwiki"
+### Changed to point to a custom domain name wiki.dfn.net.au
+baseurl: ""
+url: "https://wiki.dfn.net.au"
 
 exclude:
   - README.md
