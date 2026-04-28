@@ -9,8 +9,7 @@ This type of SBC is used in later DFNSMALL and all DFNKIT observatories.
 DFN observatories specific configuration is described below.
 
 For more details regarding the Commell LE-37D single board industrial
-computer please refer to user manual on the manufacturer's web site
-[1](http://www.commell.com.tw/Support/Product%20Technical%20Support/LE-37D.htm).
+computer please refer to [user manual on the manufacturer's web site](http://www.commell.com.tw/Support/Product%20Technical%20Support/LE-37D.htm).
 
 ### Standard HW jumpers setup - LE-37D, DFNKIT cameras
 

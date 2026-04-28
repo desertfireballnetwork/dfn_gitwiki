@@ -252,5 +252,4 @@ grep  "enabled" /proc/acpi/wakeup
 
 ## 6. Resources and other reads
 
-Comprehensive generic instructions for suspend in all recent Ubuntu versions, updated as new versions are released
-https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
+[Comprehensive generic instructions for suspend in all recent Ubuntu versions, updated as new versions are released.](https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/)
