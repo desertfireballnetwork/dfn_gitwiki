@@ -1,7 +1,7 @@
 ---
 title: "Zbook Sleep and Hibernate"
 has_children: true
-parent: "Other"
+parent: "Zbook"
 ---
 
 # Instructions to enable S4 hibernate on 2025 ZBook

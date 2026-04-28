@@ -1,6 +1,6 @@
 ---
 title: "Zbook"
 has_children: true
-parent: "Observatories"
+parent: "other"
 ---
-Other useful instructions and howtos.
+HP Zbook - useful notes, instructions and howtos.
